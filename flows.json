@@ -1,13 +1,5 @@
 [
     {
-        "id": "e328d04ff45091e7",
-        "type": "tab",
-        "label": "Flujo 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "ef484dfe62883e41",
         "type": "tab",
         "label": "TC-RE-01",
@@ -2338,22 +2330,18 @@
         "z": "ef484dfe62883e41",
         "name": "calc_vol",
         "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (40000 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 2,
+        "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1700,
-        "y": 240,
+        "x": 1660,
+        "y": 220,
         "wires": [
             [
-                "98e9ed7dfe575309",
-                "7c72534067bf47a8",
-                "22f6fac42e1280b0",
-                "848b22bc0969f32d"
-            ],
-            []
+                "7c72534067bf47a8"
+            ]
         ]
     },
     {
@@ -2368,7 +2356,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1750,
+        "x": 1710,
         "y": 180,
         "wires": [
             [
@@ -2388,13 +2376,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2000,
+        "x": 1940,
         "y": 180,
         "wires": [
             [
-                "e6c14f7a82315080",
-                "64a2bcc6828e935e",
-                "2b8683b66ac8b060"
+                "64a2bcc6828e935e"
             ]
         ]
     },
@@ -2410,13 +2396,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
-        "y": 60,
+        "x": 1670,
+        "y": 140,
         "wires": [
             [
-                "fd6756cf620457c8",
-                "f19a2519f209d82c",
-                "aeb7edf3841c6c3a"
+                "f19a2519f209d82c"
             ]
         ]
     },
@@ -2496,60 +2480,6 @@
         ]
     },
     {
-        "id": "e6c14f7a82315080",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  flujo: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2240,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "98e9ed7dfe575309",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  volumen: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1900,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fd6756cf620457c8",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  presion: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1900,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "64a2bcc6828e935e",
         "type": "ui-gauge",
         "z": "ef484dfe62883e41",
@@ -2587,8 +2517,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 2230,
-        "y": 220,
+        "x": 2130,
+        "y": 180,
         "wires": []
     },
     {
@@ -2642,8 +2572,8 @@
         "width": "2",
         "height": "5",
         "className": "",
-        "x": 2220,
-        "y": 300,
+        "x": 2120,
+        "y": 220,
         "wires": [
             []
         ]
@@ -2660,8 +2590,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1910,
-        "y": 260,
+        "x": 1810,
+        "y": 220,
         "wires": [
             [
                 "08e2393cbe52d0af"
@@ -2706,8 +2636,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1940,
-        "y": 80,
+        "x": 2100,
+        "y": 140,
         "wires": []
     },
     {
@@ -2722,30 +2652,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1910,
-        "y": 580,
+        "x": 1830,
+        "y": 300,
         "wires": [
             [
                 "ca319e29914d1bb5"
             ]
-        ]
-    },
-    {
-        "id": "b125dc77f1115d5e",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1900,
-        "y": 620,
-        "wires": [
-            []
         ]
     },
     {
@@ -2765,8 +2677,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 2220,
-        "y": 420,
+        "x": 2120,
+        "y": 260,
         "wires": []
     },
     {
@@ -2781,30 +2693,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1910,
-        "y": 420,
+        "x": 1830,
+        "y": 260,
         "wires": [
             [
                 "5c2751931feee1c0"
             ]
-        ]
-    },
-    {
-        "id": "74be552c118f0436",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1900,
-        "y": 500,
-        "wires": [
-            []
         ]
     },
     {
@@ -2824,8 +2718,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 2230,
-        "y": 580,
+        "x": 2130,
+        "y": 300,
         "wires": []
     },
     {
@@ -2840,13 +2734,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
-        "y": 420,
+        "x": 1670,
+        "y": 260,
         "wires": [
             [
-                "82db2357ed8ef412",
-                "74be552c118f0436",
-                "0aa57d1fa8c89cef"
+                "82db2357ed8ef412"
             ]
         ]
     },
@@ -2862,13 +2754,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
-        "y": 540,
+        "x": 1670,
+        "y": 300,
         "wires": [
             [
-                "faf1277f7c976196",
-                "b125dc77f1115d5e",
-                "a4f8bb3be81be8aa"
+                "faf1277f7c976196"
             ]
         ]
     },
@@ -2986,9 +2876,7 @@
             [
                 "e64d56b38b63e707"
             ],
-            [
-                "45c510cafe3c77c8"
-            ],
+            [],
             [],
             [],
             [],
@@ -3126,239 +3014,6 @@
         ]
     },
     {
-        "id": "a485aedf0613acbe",
-        "type": "Stackhero-InfluxDB-v2-write",
-        "z": "ef484dfe62883e41",
-        "server": "c0ae77d76fc0b798",
-        "name": "DB",
-        "x": 2510,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2b8683b66ac8b060",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "F_influx_flujo",
-        "func": "if (isNaN(msg.payload)) {\n    node.error(\"Valor de flujo no es un número\", msg);\n    return null;\n}\nmsg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MF-1.1',\n                equipo_id: 'FA-02A',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                flujo_lh: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2230,
-        "y": 180,
-        "wires": [
-            [
-                "a485aedf0613acbe"
-            ]
-        ]
-    },
-    {
-        "id": "22f6fac42e1280b0",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "F_influx_vol",
-        "func": "if (isNaN(msg.payload)) {\n    node.error(\"Valor de nivel litros no es un número\", msg);\n    return null;\n}\nmsg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-2.1',\n                equipo_id: 'FA-02A',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1910,
-        "y": 340,
-        "wires": [
-            [
-                "a485aedf0613acbe"
-            ]
-        ]
-    },
-    {
-        "id": "aeb7edf3841c6c3a",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "F_influx_presion",
-        "func": "if (isNaN(msg.payload)) {\n    node.error(\"Valor de presión no es un número\", msg);\n    return null;\n}\nmsg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MP-1.1',\n                equipo_id: 'FA-02A',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                presion_kg: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1920,
-        "y": 40,
-        "wires": [
-            [
-                "a485aedf0613acbe"
-            ]
-        ]
-    },
-    {
-        "id": "0aa57d1fa8c89cef",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "F_influx_temp",
-        "func": "if (isNaN(msg.payload)) {\n    node.error(\"Valor de temperatura no es un número\", msg);\n    return null;\n}\nmsg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-2.1',\n                equipo_id: 'ent-BA-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1920,
-        "y": 460,
-        "wires": [
-            [
-                "a485aedf0613acbe"
-            ]
-        ]
-    },
-    {
-        "id": "a4f8bb3be81be8aa",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "F_influx_temp",
-        "func": "if (isNaN(msg.payload)) {\n    node.error(\"Valor de temperatura no es un número\", msg);\n    return null;\n}\nmsg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-2.2',\n                equipo_id: 'sal-BA-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1920,
-        "y": 540,
-        "wires": [
-            [
-                "a485aedf0613acbe"
-            ]
-        ]
-    },
-    {
-        "id": "848b22bc0969f32d",
-        "type": "ui-text",
-        "z": "ef484dfe62883e41",
-        "group": "75e50c331c190f67",
-        "order": 0,
-        "width": "0",
-        "height": "0",
-        "name": "VOLUMEN FA-02",
-        "label": "VOLUMEN FA-02",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": true,
-        "font": "",
-        "fontSize": "34",
-        "color": "#000000",
-        "className": "",
-        "x": 1930,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "45c510cafe3c77c8",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "calc_temp",
-        "func": "const valorADCMin = 4000;\nconst valorADCMax = 20000;\nconst valorMin = 0;\nconst valorMax = 500;\n\nconst valorADC = msg.payload[0];\nconst valorTemperatura = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\nmsg.payload = Math.round(valorTemperatura);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1710,
-        "y": 660,
-        "wires": [
-            [
-                "9520e543fa25fcb9",
-                "85e1640c84f1a1e4",
-                "47cb39a66059460b"
-            ]
-        ]
-    },
-    {
-        "id": "9520e543fa25fcb9",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1910,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7e9b8ef87e994358",
-        "type": "ui-text",
-        "z": "ef484dfe62883e41",
-        "group": "75e50c331c190f67",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "Tanque_15-A",
-        "label": "Tanque_15-A",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 2230,
-        "y": 700,
-        "wires": []
-    },
-    {
-        "id": "85e1640c84f1a1e4",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1900,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "47cb39a66059460b",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "d": true,
-        "name": "F_influx_temp",
-        "func": "if (isNaN(msg.payload)) {\n    node.error(\"Valor de temperatura no es un número\", msg);\n    return null;\n}\nmsg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-2.2',\n                equipo_id: 'sal-BA-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1920,
-        "y": 660,
-        "wires": [
-            [
-                "a485aedf0613acbe"
-            ]
-        ]
-    },
-    {
         "id": "bccb80ece0db52e0",
         "type": "inject",
         "z": "ef484dfe62883e41",
@@ -3468,13 +3123,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1220,
+        "x": 1240,
         "y": 540,
         "wires": [
             [
-                "b6b46a3112132566",
-                "04233011427d2e2d",
-                "0f059069fa0e7644"
+                "b6b46a3112132566"
             ]
         ]
     },
@@ -3495,8 +3148,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1700,
-        "y": 460,
+        "x": 1560,
+        "y": 540,
         "wires": []
     },
     {
@@ -3512,29 +3165,11 @@
         "finalize": "",
         "libs": [],
         "x": 1390,
-        "y": 460,
+        "y": 540,
         "wires": [
             [
                 "ab6a802f6de44b32"
             ]
-        ]
-    },
-    {
-        "id": "04233011427d2e2d",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1540,
-        "y": 460,
-        "wires": [
-            []
         ]
     },
     {
@@ -3553,9 +3188,7 @@
         "y": 580,
         "wires": [
             [
-                "52d65cff3b4c58d2",
-                "3f138c9990f8a954",
-                "fb57d3ef49a17720"
+                "52d65cff3b4c58d2"
             ]
         ]
     },
@@ -3576,8 +3209,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1700,
-        "y": 540,
+        "x": 1560,
+        "y": 580,
         "wires": []
     },
     {
@@ -3593,29 +3226,11 @@
         "finalize": "",
         "libs": [],
         "x": 1390,
-        "y": 540,
+        "y": 580,
         "wires": [
             [
                 "1a2adafb47097288"
             ]
-        ]
-    },
-    {
-        "id": "3f138c9990f8a954",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1540,
-        "y": 540,
-        "wires": [
-            []
         ]
     },
     {
@@ -3634,9 +3249,7 @@
         "y": 620,
         "wires": [
             [
-                "7fba6cdf343dd69f",
-                "221042bb287440e4",
-                "c8d1e8957c089dfd"
+                "7fba6cdf343dd69f"
             ]
         ]
     },
@@ -3657,7 +3270,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1700,
+        "x": 1560,
         "y": 620,
         "wires": []
     },
@@ -3682,24 +3295,6 @@
         ]
     },
     {
-        "id": "221042bb287440e4",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1540,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8786665ea9feb5da",
         "type": "function",
         "z": "f6951d71b64c6ea4",
@@ -3715,9 +3310,7 @@
         "y": 660,
         "wires": [
             [
-                "33e1c96b9be237a0",
-                "300b3f09ac897e9d",
-                "c776920114fd1592"
+                "33e1c96b9be237a0"
             ]
         ]
     },
@@ -3738,8 +3331,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1700,
-        "y": 700,
+        "x": 1560,
+        "y": 660,
         "wires": []
     },
     {
@@ -3755,29 +3348,11 @@
         "finalize": "",
         "libs": [],
         "x": 1390,
-        "y": 700,
+        "y": 660,
         "wires": [
             [
                 "43fd63a5da543017"
             ]
-        ]
-    },
-    {
-        "id": "300b3f09ac897e9d",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1540,
-        "y": 700,
-        "wires": [
-            []
         ]
     },
     {
@@ -4083,8 +3658,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 1000,
-        "y": 620,
+        "x": 1020,
+        "y": 540,
         "wires": [
             [
                 "333780b073541cf7"
@@ -4130,78 +3705,6 @@
         ]
     },
     {
-        "id": "efb126eeaf58dcea",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "check",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 530,
-        "y": 780,
-        "wires": [
-            [
-                "61130c382ddf2d5d"
-            ]
-        ]
-    },
-    {
-        "id": "61130c382ddf2d5d",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "health check",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 780,
-        "wires": [
-            [
-                "aee473f1b9ac6234"
-            ]
-        ]
-    },
-    {
-        "id": "aee473f1b9ac6234",
-        "type": "switch",
-        "z": "f6951d71b64c6ea4",
-        "name": "update diag",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 910,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "984de0a1bfbe98f1",
         "type": "inject",
         "z": "f6951d71b64c6ea4",
@@ -4227,98 +3730,6 @@
         "wires": [
             [
                 "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "78ddba4a9b4205c3",
-        "type": "Stackhero-InfluxDB-v2-write",
-        "z": "f6951d71b64c6ea4",
-        "server": "c0ae77d76fc0b798",
-        "name": "DB",
-        "x": 2070,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0f059069fa0e7644",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-3.2', \n                equipo_id: 'sup-DA-01', \n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1520,
-        "y": 500,
-        "wires": [
-            [
-                "78ddba4a9b4205c3"
-            ]
-        ]
-    },
-    {
-        "id": "fb57d3ef49a17720",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-3.1',\n                equipo_id: 'inf-DA-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1560,
-        "y": 580,
-        "wires": [
-            [
-                "78ddba4a9b4205c3"
-            ]
-        ]
-    },
-    {
-        "id": "c8d1e8957c089dfd",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-3.4',\n                equipo_id: 'sup-DA-02',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1560,
-        "y": 660,
-        "wires": [
-            [
-                "78ddba4a9b4205c3"
-            ]
-        ]
-    },
-    {
-        "id": "c776920114fd1592",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-3.3',\n                equipo_id: 'sup-DA-02',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1560,
-        "y": 740,
-        "wires": [
-            [
-                "78ddba4a9b4205c3"
             ]
         ]
     },
@@ -4500,8 +3911,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 440,
-        "y": 1200,
+        "x": 470,
+        "y": 1100,
         "wires": [
             [
                 "a3a556a1e3a2394d"
@@ -4589,9 +4000,7 @@
             [
                 "7a81c465a2fd907f"
             ],
-            [
-                "34e26b33b33bfcd5"
-            ],
+            [],
             [
                 "1368e955718fa813"
             ],
@@ -4765,8 +4174,7 @@
         "y": 680,
         "wires": [
             [
-                "60977eea11983ef3",
-                "9887e7527c991d53"
+                "60977eea11983ef3"
             ]
         ]
     },
@@ -4808,7 +4216,7 @@
         "width": "1",
         "height": "5",
         "className": "",
-        "x": 1960,
+        "x": 1760,
         "y": 680,
         "wires": [
             []
@@ -4826,7 +4234,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1550,
+        "x": 1570,
         "y": 680,
         "wires": [
             [
@@ -4850,8 +4258,7 @@
         "y": 640,
         "wires": [
             [
-                "5247d5babf92f2f1",
-                "d34dc40732492e77"
+                "5247d5babf92f2f1"
             ]
         ]
     },
@@ -4893,7 +4300,7 @@
         "width": "1",
         "height": "5",
         "className": "",
-        "x": 1960,
+        "x": 1760,
         "y": 640,
         "wires": [
             []
@@ -4911,7 +4318,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1550,
+        "x": 1570,
         "y": 640,
         "wires": [
             [
@@ -4935,8 +4342,7 @@
         "y": 720,
         "wires": [
             [
-                "8a4054492ab4cfd0",
-                "e21d50695f6292f9"
+                "8a4054492ab4cfd0"
             ]
         ]
     },
@@ -4952,7 +4358,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1630,
+        "x": 1570,
         "y": 720,
         "wires": [
             [
@@ -4998,164 +4404,11 @@
         "width": "1",
         "height": "5",
         "className": "",
-        "x": 1960,
+        "x": 1760,
         "y": 720,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "0d54dc304bd4a627",
-        "type": "Stackhero-InfluxDB-v2-write",
-        "z": "237db71295252168",
-        "server": "c0ae77d76fc0b798",
-        "name": "DB",
-        "x": 2130,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9887e7527c991d53",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "F_influx_vol",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-1', \n                equipo_id: 'FA-01', \n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1790,
-        "y": 680,
-        "wires": [
-            [
-                "0d54dc304bd4a627"
-            ]
-        ]
-    },
-    {
-        "id": "d34dc40732492e77",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "F_influx_vol",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-9', \n                equipo_id: 'FA-09', \n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1790,
-        "y": 640,
-        "wires": [
-            [
-                "0d54dc304bd4a627"
-            ]
-        ]
-    },
-    {
-        "id": "e21d50695f6292f9",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "F_influx_vol",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-7', \n                equipo_id: 'FA-07', \n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1790,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "50eaa7cf5e858a71",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "F_influx_flujo",
-        "func": "if (isNaN(msg.payload)) {\n    node.error(\"Valor de flujo no es un número\", msg);\n    return null;\n}\nmsg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MF-1.2',\n                equipo_id: 'FA-02A',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                flujo_lh: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1630,
-        "y": 760,
-        "wires": [
-            [
-                "0d54dc304bd4a627"
-            ]
-        ]
-    },
-    {
-        "id": "34e26b33b33bfcd5",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "Flujo_sensor",
-        "func": "const valorCrudo = msg.payload.data[0];\nconst flujo = ((valorCrudo - 800) / (4000 - 800)) * (9200 - 0);\nmsg.payload = Math.round(flujo);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 760,
-        "wires": [
-            [
-                "50eaa7cf5e858a71",
-                "1f03e1e58ceb4549"
-            ]
-        ]
-    },
-    {
-        "id": "1f03e1e58ceb4549",
-        "type": "ui-gauge",
-        "z": "237db71295252168",
-        "name": "Flujo",
-        "group": "7c21feeaf5ff947a",
-        "order": 0,
-        "width": 3,
-        "height": 3,
-        "gtype": "gauge-half",
-        "gstyle": "needle",
-        "title": "gauge",
-        "units": "units",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#5cd65c"
-            },
-            {
-                "from": "4",
-                "color": "#ffc800"
-            },
-            {
-                "from": "7",
-                "color": "#ea5353"
-            }
-        ],
-        "min": 0,
-        "max": "10000",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 1990,
-        "y": 760,
-        "wires": []
     },
     {
         "id": "9adae7cd2ab254d1",
@@ -5494,33 +4747,6 @@
         ]
     },
     {
-        "id": "ba2564cdf9ac955a",
-        "type": "inject",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "check",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 600,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1b2fed0d52aef557",
         "type": "function",
         "z": "1eb03b4f8f90f9d8",
@@ -5766,13 +4992,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
+        "x": 1240,
         "y": 460,
         "wires": [
             [
-                "70e7c024682b436a",
-                "2e2d8bc4884c3dcc",
-                "d84f1e1cdb3c3727"
+                "70e7c024682b436a"
             ]
         ]
     },
@@ -5793,7 +5017,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1640,
+        "x": 1580,
         "y": 460,
         "wires": []
     },
@@ -5809,30 +5033,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
+        "x": 1390,
         "y": 460,
         "wires": [
             [
                 "c54d52a4c69a9dd7"
             ]
-        ]
-    },
-    {
-        "id": "2e2d8bc4884c3dcc",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1460,
-        "y": 460,
-        "wires": [
-            []
         ]
     },
     {
@@ -5847,13 +5053,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1260,
-        "y": 560,
+        "x": 1240,
+        "y": 500,
         "wires": [
             [
-                "d0a12c79eba2a181",
-                "afed5047aa67135b",
-                "b9104d9cb7eab471"
+                "d0a12c79eba2a181"
             ]
         ]
     },
@@ -5874,8 +5078,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1650,
-        "y": 520,
+        "x": 1590,
+        "y": 500,
         "wires": []
     },
     {
@@ -5890,30 +5094,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1430,
-        "y": 520,
+        "x": 1390,
+        "y": 500,
         "wires": [
             [
                 "1b2dee1aef989956"
             ]
-        ]
-    },
-    {
-        "id": "afed5047aa67135b",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1440,
-        "y": 520,
-        "wires": [
-            []
         ]
     },
     {
@@ -5928,13 +5114,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
+        "x": 1240,
         "y": 380,
         "wires": [
             [
-                "d565e625a2fa25ae",
-                "20e171754da446ee",
-                "135947a19821030c"
+                "d565e625a2fa25ae"
             ]
         ]
     },
@@ -5955,7 +5139,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1670,
+        "x": 1570,
         "y": 380,
         "wires": []
     },
@@ -5971,30 +5155,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1490,
+        "x": 1390,
         "y": 380,
         "wires": [
             [
                 "7b85205059597a67"
             ]
-        ]
-    },
-    {
-        "id": "20e171754da446ee",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 380,
-        "wires": [
-            []
         ]
     },
     {
@@ -6009,13 +5175,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
+        "x": 1240,
         "y": 420,
         "wires": [
             [
-                "c2b04d696ca8297c",
-                "64d1f717b140b55c",
-                "dda282a2bb517f29"
+                "c2b04d696ca8297c"
             ]
         ]
     },
@@ -6036,7 +5200,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 1640,
+        "x": 1580,
         "y": 420,
         "wires": []
     },
@@ -6052,121 +5216,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
+        "x": 1390,
         "y": 420,
         "wires": [
             [
                 "684af736f7c6871c"
-            ]
-        ]
-    },
-    {
-        "id": "64d1f717b140b55c",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  temperatura: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e9df0b89957630a9",
-        "type": "Stackhero-InfluxDB-v2-write",
-        "z": "1eb03b4f8f90f9d8",
-        "server": "c0ae77d76fc0b798",
-        "name": "DB",
-        "x": 1850,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d84f1e1cdb3c3727",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-4.1',\n                equipo_id: 'sal-ic-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1460,
-        "y": 460,
-        "wires": [
-            [
-                "e9df0b89957630a9"
-            ]
-        ]
-    },
-    {
-        "id": "b9104d9cb7eab471",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-4.2',\n                equipo_id: 'ent-BA-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1440,
-        "y": 520,
-        "wires": [
-            [
-                "e9df0b89957630a9"
-            ]
-        ]
-    },
-    {
-        "id": "135947a19821030c",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-4.3',\n                equipo_id: 'ent-BA-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 380,
-        "wires": [
-            [
-                "e9df0b89957630a9"
-            ]
-        ]
-    },
-    {
-        "id": "dda282a2bb517f29",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "F_influx_temp",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'ST-4.4',\n                equipo_id: 'ent-BA-01',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                temperatura_c: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 420,
-        "wires": [
-            [
-                "e9df0b89957630a9"
             ]
         ]
     },
@@ -6453,78 +5507,6 @@
         ]
     },
     {
-        "id": "d8fdac11e55aef37",
-        "type": "inject",
-        "z": "a0c3bb5123a98cbc",
-        "name": "check",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 610,
-        "y": 220,
-        "wires": [
-            [
-                "bfc7fe64a4896ca5"
-            ]
-        ]
-    },
-    {
-        "id": "bfc7fe64a4896ca5",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "health check",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 220,
-        "wires": [
-            [
-                "2e09f95e5df82a6c"
-            ]
-        ]
-    },
-    {
-        "id": "2e09f95e5df82a6c",
-        "type": "switch",
-        "z": "a0c3bb5123a98cbc",
-        "name": "update diag",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 910,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a23532b80e487bdc",
         "type": "function",
         "z": "a0c3bb5123a98cbc",
@@ -6537,7 +5519,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 580,
+        "y": 600,
         "wires": [
             []
         ]
@@ -6563,8 +5545,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 280,
-        "y": 880,
+        "x": 210,
+        "y": 740,
         "wires": [
             [
                 "b8dfe16f6e8ba549"
@@ -6650,8 +5632,8 @@
         "y": 540,
         "wires": [
             [
-                "05d0ac079e9742f8",
-                "1ab18490d1c31303"
+                "1ab18490d1c31303",
+                "05d0ac079e9742f8"
             ],
             []
         ]
@@ -6851,39 +5833,18 @@
         "z": "a0c3bb5123a98cbc",
         "name": "calc_vol_FA-04",
         "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (65000 - 3200);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1260,
-        "y": 280,
-        "wires": [
-            [
-                "8934c5d47c9c697d",
-                "2a64d686af8139e0",
-                "e180ba8d03a97e9b"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "8934c5d47c9c697d",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  volumen: msg.payload\n};\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1480,
-        "y": 340,
+        "x": 1280,
+        "y": 400,
         "wires": [
-            []
+            [
+                "2a64d686af8139e0"
+            ]
         ]
     },
     {
@@ -6924,8 +5885,8 @@
         "width": "1",
         "height": "5",
         "className": "",
-        "x": 1760,
-        "y": 260,
+        "x": 1740,
+        "y": 400,
         "wires": [
             []
         ]
@@ -6943,7 +5904,7 @@
         "finalize": "",
         "libs": [],
         "x": 1490,
-        "y": 260,
+        "y": 400,
         "wires": [
             [
                 "a4092641451534e8"
@@ -6956,7 +5917,7 @@
         "z": "a0c3bb5123a98cbc",
         "name": "calc_vol_FA-06A",
         "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 3980)) / (20000 - 3980) * (66300 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 2,
+        "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
@@ -6966,29 +5927,8 @@
         "y": 440,
         "wires": [
             [
-                "98884ba75d120c1b",
-                "4be8b38837695c30",
-                "053fcd60b0acc9ce"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "98884ba75d120c1b",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  volumen: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 500,
-        "wires": [
-            []
+                "4be8b38837695c30"
+            ]
         ]
     },
     {
@@ -7029,8 +5969,8 @@
         "width": "1",
         "height": "5",
         "className": "",
-        "x": 1770,
-        "y": 420,
+        "x": 1730,
+        "y": 440,
         "wires": [
             []
         ]
@@ -7048,7 +5988,7 @@
         "finalize": "",
         "libs": [],
         "x": 1490,
-        "y": 420,
+        "y": 440,
         "wires": [
             [
                 "2cfe75546025340b"
@@ -7061,39 +6001,18 @@
         "z": "a0c3bb5123a98cbc",
         "name": "calc_vol_FA-06B",
         "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (4000 - 20000)) * (0 - 94100);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1270,
-        "y": 120,
-        "wires": [
-            [
-                "7156a2775a96a2c5",
-                "8b89f9dc3ff26392",
-                "fa993da9386f8ddf"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "7156a2775a96a2c5",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  volumen: msg.payload\n};\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1480,
-        "y": 180,
+        "x": 1270,
+        "y": 360,
         "wires": [
-            []
+            [
+                "8b89f9dc3ff26392"
+            ]
         ]
     },
     {
@@ -7134,8 +6053,8 @@
         "width": "1",
         "height": "5",
         "className": "",
-        "x": 1770,
-        "y": 100,
+        "x": 1730,
+        "y": 360,
         "wires": [
             []
         ]
@@ -7153,7 +6072,7 @@
         "finalize": "",
         "libs": [],
         "x": 1490,
-        "y": 100,
+        "y": 360,
         "wires": [
             [
                 "f30b056ac847726d"
@@ -7190,196 +6109,22 @@
         ]
     },
     {
-        "id": "58032e553e7294b4",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "calc_amp_FA-2A",
-        "func": "const valorADCMin = 4000;\nconst valorADCMax = 20000;\nconst valorMin = 0;\nconst valorMax = 30;\n\nconst valorADC = msg.payload[0];\nconst valorAmp = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\nmsg.payload = valorAmp.toFixed(4);\n\nreturn msg;\n",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1250,
-        "y": 780,
-        "wires": [
-            [
-                "8d73db3993b693ae",
-                "c56488039690e921"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "8d73db3993b693ae",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  amperaje: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 820,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c56488039690e921",
-        "type": "ui-gauge",
-        "z": "a0c3bb5123a98cbc",
-        "d": true,
-        "name": "Amperaje FA-2A",
-        "group": "3f690bb5a526a246",
-        "order": 5,
-        "width": "5",
-        "height": "4",
-        "gtype": "gauge-half",
-        "gstyle": "rounded",
-        "title": "Amperaje FA-2A",
-        "units": "A",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#33d17a"
-            },
-            {
-                "from": "9",
-                "color": "#ea5353"
-            }
-        ],
-        "min": 0,
-        "max": "30",
-        "sizeThickness": "18",
-        "sizeGap": "3",
-        "sizeKeyThickness": "16",
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 1760,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "650f5f82d11bb0dc",
-        "type": "Stackhero-InfluxDB-v2-write",
-        "z": "a0c3bb5123a98cbc",
-        "server": "c0ae77d76fc0b798",
-        "name": "DB",
-        "x": 1730,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e180ba8d03a97e9b",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "F_influx_flujo",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-4',\n                equipo_id: 'FA-04',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 220,
-        "wires": [
-            [
-                "650f5f82d11bb0dc"
-            ]
-        ]
-    },
-    {
-        "id": "053fcd60b0acc9ce",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "F_influx_vol",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-6A',\n                equipo_id: 'FA-06A',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 380,
-        "wires": [
-            [
-                "650f5f82d11bb0dc"
-            ]
-        ]
-    },
-    {
-        "id": "fa993da9386f8ddf",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "F_influx_vol",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-6B',\n                equipo_id: 'FA-06B',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 100,
-        "wires": [
-            [
-                "650f5f82d11bb0dc"
-            ]
-        ]
-    },
-    {
         "id": "b074a28ed8cdd104",
         "type": "function",
         "z": "a0c3bb5123a98cbc",
         "name": "calc_vol_FA-06C",
         "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 3990)) / (20000 - 3990) * (34755 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 2,
+        "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 1270,
-        "y": 600,
+        "y": 480,
         "wires": [
             [
-                "55e75bdf29e49f51",
-                "31326574eb3d5bf1",
-                "5826c7073db321d1"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "55e75bdf29e49f51",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "F_influx_vol",
-        "func": "msg.payload = {\n    bucket: 'monitor_destilados1',\n    precision: 'ms',\n    data: [\n        {\n            measurement: 'ParametrosProceso',\n            tags: {\n                sensor_id: 'MN-6C',\n                equipo_id: 'FA-06C',\n                ubicacion: 'destilados'\n            },\n            fields: {\n                nivel_litros: msg.payload\n            },\n            timestamp: Date.now()\n        }\n    ]\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 540,
-        "wires": [
-            [
-                "650f5f82d11bb0dc"
+                "31326574eb3d5bf1"
             ]
         ]
     },
@@ -7396,7 +6141,7 @@
         "finalize": "",
         "libs": [],
         "x": 1490,
-        "y": 580,
+        "y": 480,
         "wires": [
             [
                 "6f7312c3e91b82a4"
@@ -7454,26 +6199,8 @@
         "width": "1",
         "height": "5",
         "className": "",
-        "x": 1770,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5826c7073db321d1",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "telemetria",
-        "func": "msg.payload = {\n  volumen: msg.payload\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 660,
+        "x": 1730,
+        "y": 480,
         "wires": [
             []
         ]
