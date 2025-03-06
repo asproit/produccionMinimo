@@ -8,14 +8,6 @@
         "env": []
     },
     {
-        "id": "f6951d71b64c6ea4",
-        "type": "tab",
-        "label": "TC-RE-03 ",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "237db71295252168",
         "type": "tab",
         "label": "TC-RE-04",
@@ -35,6 +27,14 @@
         "id": "a0c3bb5123a98cbc",
         "type": "tab",
         "label": "TC-RE-06",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e2b9859944ef07b2",
+        "type": "tab",
+        "label": "TABLA",
         "disabled": false,
         "info": "",
         "env": []
@@ -872,7 +872,9 @@
             "ui-control"
         ],
         "showPathInSidebar": false,
-        "navigationStyle": "default"
+        "showPageTitle": true,
+        "navigationStyle": "temporary",
+        "titleBarStyle": "hidden"
     },
     {
         "id": "53bbd3554f5781e9",
@@ -883,115 +885,29 @@
         "icon": "home",
         "layout": "grid",
         "theme": "60ac3cbdefc9f2e1",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
         "order": 1,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "5cdddd25c8083b2f",
-        "type": "ui-page",
-        "name": "Temperaturas",
-        "ui": "bc1023506614f084",
-        "path": "/page2",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "60ac3cbdefc9f2e1",
-        "order": 2,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "8ed92069bda431ea",
-        "type": "ui-page",
-        "name": "Sensores Flujo",
-        "ui": "bc1023506614f084",
-        "path": "/page3",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "60ac3cbdefc9f2e1",
-        "order": 3,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "d506282cc9925a19",
-        "type": "ui-page",
-        "name": "Sensores nivel",
-        "ui": "bc1023506614f084",
-        "path": "/page4",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "60ac3cbdefc9f2e1",
-        "order": 4,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "76ec05f44078dd80",
-        "type": "ui-page",
-        "name": "Medidores de presion",
-        "ui": "bc1023506614f084",
-        "path": "/page5",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "60ac3cbdefc9f2e1",
-        "order": 5,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "7c21feeaf5ff947a",
-        "type": "ui-group",
-        "name": "sensores Flujo",
-        "page": "8ed92069bda431ea",
-        "width": "3",
-        "height": "1",
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "d1e5da8ea7145cd4",
-        "type": "ui-group",
-        "name": "Columnas De Destilación",
-        "page": "53bbd3554f5781e9",
-        "width": "3",
-        "height": "1",
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "a80aac20c87d2431",
-        "type": "ui-group",
-        "name": "Sensores nivel",
-        "page": "d506282cc9925a19",
-        "width": "6",
-        "height": "1",
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "907eabc383ee4497",
-        "type": "ui-group",
-        "name": "medidores presion",
-        "page": "d506282cc9925a19",
-        "width": "6",
-        "height": "1",
-        "order": 2,
-        "showTitle": true,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -999,38 +915,12 @@
     {
         "id": "3f690bb5a526a246",
         "type": "ui-group",
-        "name": "Tablero Alimentación Sistema",
+        "name": "Variables de proceso",
         "page": "53bbd3554f5781e9",
         "width": "12",
         "height": "2",
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "75e50c331c190f67",
-        "type": "ui-group",
-        "name": "Calentador de carga",
-        "page": "53bbd3554f5781e9",
-        "width": "3",
-        "height": "1",
         "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "485ecec3c95ed560",
-        "type": "ui-group",
-        "name": "Tablero HCD",
-        "page": "53bbd3554f5781e9",
-        "width": "12",
-        "height": "1",
-        "order": 4,
-        "showTitle": true,
+        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1041,7 +931,7 @@
         "name": "Default Theme",
         "colors": {
             "surface": "#ffffff",
-            "primary": "#0094ce",
+            "primary": "#0300cc",
             "bgPage": "#eeeeee",
             "groupBg": "#ffffff",
             "groupOutline": "#cccccc"
@@ -1050,7 +940,8 @@
             "pagePadding": "12px",
             "groupGap": "12px",
             "groupBorderRadius": "4px",
-            "widgetGap": "14px"
+            "widgetGap": "14px",
+            "density": "default"
         }
     },
     {
@@ -1474,19 +1365,6 @@
         "showLogs": true
     },
     {
-        "id": "0b17382d94e1262d",
-        "type": "ui-group",
-        "name": "Tablero 1.2",
-        "page": "53bbd3554f5781e9",
-        "width": "9",
-        "height": "1",
-        "order": 6,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "934e690f19abf846",
         "type": "mqtt-broker",
         "name": "MF-4.1",
@@ -1578,19 +1456,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "e9b1228b7d513a98",
-        "type": "ui-group",
-        "name": "Intercambiadores",
-        "page": "53bbd3554f5781e9",
-        "width": "4",
-        "height": "1",
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
     },
     {
         "id": "c99a234aaa8cc852",
@@ -1777,19 +1642,6 @@
         "showLogs": true
     },
     {
-        "id": "f48946a759fc012c",
-        "type": "ui-group",
-        "name": "Tablero 1.2",
-        "page": "53bbd3554f5781e9",
-        "width": "9",
-        "height": "1",
-        "order": 6,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "8bae15cf948fa88a",
         "type": "mqtt-broker",
         "name": "MF-4.1",
@@ -1881,19 +1733,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "8fb5f9956f9e15f0",
-        "type": "ui-group",
-        "name": "Intercambiadores",
-        "page": "53bbd3554f5781e9",
-        "width": "4",
-        "height": "1",
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
     },
     {
         "id": "faac219c20213937",
@@ -2325,26 +2164,6 @@
         ]
     },
     {
-        "id": "c98d29923810f8a4",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "calc_vol",
-        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (40000 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1660,
-        "y": 220,
-        "wires": [
-            [
-                "7c72534067bf47a8"
-            ]
-        ]
-    },
-    {
         "id": "f567f8f27fb7333c",
         "type": "function",
         "z": "ef484dfe62883e41",
@@ -2380,27 +2199,7 @@
         "y": 180,
         "wires": [
             [
-                "64a2bcc6828e935e"
-            ]
-        ]
-    },
-    {
-        "id": "49285a965e3008a7",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "calc_presion",
-        "func": "const valorADCMin = 3850;\nconst valorADCMax = 20000;\nconst valorMin = 0;\nconst valorMax = 12.23664;\n\nconst valorADC = msg.payload[0];\nconst valorPresion = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\n// Redondear a un decimal\nmsg.payload = Math.round(valorPresion * 10) / 10;\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1670,
-        "y": 140,
-        "wires": [
-            [
-                "f19a2519f209d82c"
+                "format-for-table"
             ]
         ]
     },
@@ -2467,298 +2266,15 @@
         "y": 200,
         "wires": [
             [
-                "49285a965e3008a7"
+                "ebd8a6041841f03c"
             ],
             [
-                "c98d29923810f8a4",
-                "f567f8f27fb7333c"
+                "f567f8f27fb7333c",
+                "c8c3d9c78bd47532"
             ],
             [],
             [
-                "88ee6a4e2d2990d8"
-            ]
-        ]
-    },
-    {
-        "id": "64a2bcc6828e935e",
-        "type": "ui-gauge",
-        "z": "ef484dfe62883e41",
-        "name": "Flujo COPE",
-        "group": "3f690bb5a526a246",
-        "order": 4,
-        "width": "5",
-        "height": "4",
-        "gtype": "gauge-half",
-        "gstyle": "rounded",
-        "title": "Flujo COPE",
-        "units": "L/h",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#ea5353"
-            },
-            {
-                "from": "4000",
-                "color": "#5cd65c"
-            },
-            {
-                "from": "7500",
-                "color": "#ea5353"
-            }
-        ],
-        "min": 0,
-        "max": "10000",
-        "sizeThickness": "26",
-        "sizeGap": "3",
-        "sizeKeyThickness": "20",
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 2130,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "08e2393cbe52d0af",
-        "type": "ui-chart",
-        "z": "ef484dfe62883e41",
-        "group": "3f690bb5a526a246",
-        "name": "Volumen FA-02",
-        "label": "Volumen FA-02",
-        "order": 2,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisLabel": "",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "property",
-        "xAxisType": "category",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "yAxisLabel": "",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "40000",
-        "action": "replace",
-        "stackSeries": true,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#227dbf",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": "2",
-        "height": "5",
-        "className": "",
-        "x": 2120,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7c72534067bf47a8",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1810,
-        "y": 220,
-        "wires": [
-            [
-                "08e2393cbe52d0af"
-            ]
-        ]
-    },
-    {
-        "id": "f19a2519f209d82c",
-        "type": "ui-gauge",
-        "z": "ef484dfe62883e41",
-        "name": "Presion alimentacion",
-        "group": "3f690bb5a526a246",
-        "order": 5,
-        "width": "5",
-        "height": "4",
-        "gtype": "gauge-half",
-        "gstyle": "rounded",
-        "title": "Presión Alimentación",
-        "units": "Kg/cm2",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#ea5353"
-            },
-            {
-                "from": "4",
-                "color": "#5cd65c"
-            },
-            {
-                "from": "6",
-                "color": "#ea5353"
-            }
-        ],
-        "min": 0,
-        "max": "10",
-        "sizeThickness": "26",
-        "sizeGap": "3",
-        "sizeKeyThickness": "20",
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 2100,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "faf1277f7c976196",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1830,
-        "y": 300,
-        "wires": [
-            [
-                "ca319e29914d1bb5"
-            ]
-        ]
-    },
-    {
-        "id": "5c2751931feee1c0",
-        "type": "ui-text",
-        "z": "ef484dfe62883e41",
-        "group": "75e50c331c190f67",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "Entrada BA-01",
-        "label": "Entrada BA-01",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 2120,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "82db2357ed8ef412",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1830,
-        "y": 260,
-        "wires": [
-            [
-                "5c2751931feee1c0"
-            ]
-        ]
-    },
-    {
-        "id": "ca319e29914d1bb5",
-        "type": "ui-text",
-        "z": "ef484dfe62883e41",
-        "group": "75e50c331c190f67",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "Salida BA-01",
-        "label": "Salida BA-01",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 2130,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "88ee6a4e2d2990d8",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "calc_temp",
-        "func": "const valorADCMin = 4000;\nconst valorADCMax = 20000;\nconst valorMin = 0;\nconst valorMax = 700;\n\nconst valorADC = msg.payload[0];\nconst valorTemperatura = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\nmsg.payload = Math.round(valorTemperatura);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1670,
-        "y": 260,
-        "wires": [
-            [
-                "82db2357ed8ef412"
-            ]
-        ]
-    },
-    {
-        "id": "e64d56b38b63e707",
-        "type": "function",
-        "z": "ef484dfe62883e41",
-        "name": "calc_temp",
-        "func": "const valorADCMin = 4000;\nconst valorADCMax = 20000;\nconst valorMin = 45;\nconst valorMax = 1100;\n\nconst valorADC = msg.payload[0];\nconst valorTemperatura = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\nmsg.payload = Math.round(valorTemperatura);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1670,
-        "y": 300,
-        "wires": [
-            [
-                "faf1277f7c976196"
+                "ea509f3d24aca312"
             ]
         ]
     },
@@ -2874,7 +2390,7 @@
             [],
             [],
             [
-                "e64d56b38b63e707"
+                "9f9f23f8c1e49e15"
             ],
             [],
             [],
@@ -3112,624 +2628,116 @@
         ]
     },
     {
-        "id": "333780b073541cf7",
+        "id": "format-for-table",
         "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "z": "ef484dfe62883e41",
+        "name": "Formato para Tabla",
+        "func": "// Preservar el payload original\nlet valor = msg.payload;\n\n// Agregar información para la tabla unificada\nmsg.nombre = \"Flujo Materia Prima\";\nmsg.unidades = \"L/h\";\n\n// Si el valor es una cadena (mensaje de error), mostrar como está\nif (typeof valor === 'string') {\n    // Mantener el mensaje de error\n} else {\n    // Asegurar que sea un número\n    msg.payload = Number(valor);\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
-        "y": 540,
+        "x": 2170,
+        "y": 180,
         "wires": [
             [
-                "b6b46a3112132566"
+                "e72027eda7951399"
             ]
         ]
     },
     {
-        "id": "ab6a802f6de44b32",
-        "type": "ui-text",
-        "z": "f6951d71b64c6ea4",
-        "group": "d1e5da8ea7145cd4",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "name": "Superior DA-01",
-        "label": "Superior DA-01",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1560,
-        "y": 540,
+        "id": "e72027eda7951399",
+        "type": "link out",
+        "z": "ef484dfe62883e41",
+        "name": "TC-RE-05",
+        "mode": "link",
+        "links": [
+            "d28bdcf38e2d85e2",
+            "c64e80cac0381523"
+        ],
+        "x": 2355,
+        "y": 180,
         "wires": []
     },
     {
-        "id": "b6b46a3112132566",
+        "id": "ebd8a6041841f03c",
         "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 540,
-        "wires": [
-            [
-                "ab6a802f6de44b32"
-            ]
-        ]
-    },
-    {
-        "id": "5459bd8a7899cff6",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "z": "ef484dfe62883e41",
+        "name": "presionAlimentacion",
+        "func": "const valorADCMin = 3850;\nconst valorADCMax = 20000;\nconst valorMin = 0;\nconst valorMax = 12.23664;\n\nconst valorADC = msg.payload[0];\nconst valorPresion = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\n// Redondear a un decimal\nmsg.payload = Math.round(valorPresion * 10) / 10;\nmsg.nombre = \"Presión Alimentación\";\nmsg.unidades = \"Kg/cm2\";\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
-        "y": 580,
+        "x": 1700,
+        "y": 140,
         "wires": [
             [
-                "52d65cff3b4c58d2"
+                "e72027eda7951399"
             ]
         ]
     },
     {
-        "id": "1a2adafb47097288",
-        "type": "ui-text",
-        "z": "f6951d71b64c6ea4",
-        "group": "d1e5da8ea7145cd4",
-        "order": 5,
-        "width": "2",
-        "height": "1",
-        "name": "Inferior DA-01",
-        "label": "Inferior DA-01",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1560,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "52d65cff3b4c58d2",
+        "id": "c8c3d9c78bd47532",
         "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 580,
-        "wires": [
-            [
-                "1a2adafb47097288"
-            ]
-        ]
-    },
-    {
-        "id": "ce8657f427243ff9",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "z": "ef484dfe62883e41",
+        "name": "volumenFA-02",
+        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (40000 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nmsg.nombre = \"Volumen FA-02\";\nmsg.unidades = \"Litros\";\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
-        "y": 620,
+        "x": 1680,
+        "y": 220,
         "wires": [
             [
-                "7fba6cdf343dd69f"
+                "e72027eda7951399"
             ]
         ]
     },
     {
-        "id": "4290d1fb3aa1cd45",
-        "type": "ui-text",
-        "z": "f6951d71b64c6ea4",
-        "group": "d1e5da8ea7145cd4",
-        "order": 4,
-        "width": "2",
-        "height": "1",
-        "name": "Superior DA-02",
-        "label": "Superior DA-02",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1560,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "7fba6cdf343dd69f",
+        "id": "ea509f3d24aca312",
         "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 620,
-        "wires": [
-            [
-                "4290d1fb3aa1cd45"
-            ]
-        ]
-    },
-    {
-        "id": "8786665ea9feb5da",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "z": "ef484dfe62883e41",
+        "name": "entradaCalentador",
+        "func": "const valorADCMin = 4000;\nconst valorADCMax = 20000;\nconst valorMin = 0;\nconst valorMax = 700;\n\nconst valorADC = msg.payload[0];\nconst valorTemperatura = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\nmsg.payload = Math.round(valorTemperatura);\nmsg.nombre = \"Entrada Calentador\";\nmsg.unidades = \"°C\";\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
-        "y": 660,
+        "x": 1690,
+        "y": 260,
         "wires": [
             [
-                "33e1c96b9be237a0"
+                "e72027eda7951399"
             ]
         ]
     },
     {
-        "id": "43fd63a5da543017",
-        "type": "ui-text",
-        "z": "f6951d71b64c6ea4",
-        "group": "d1e5da8ea7145cd4",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "name": "Inferior DA-02",
-        "label": "Inferior DA-02",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1560,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "33e1c96b9be237a0",
+        "id": "9f9f23f8c1e49e15",
         "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 660,
-        "wires": [
-            [
-                "43fd63a5da543017"
-            ]
-        ]
-    },
-    {
-        "id": "3e4ad3febaec389c",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "ADC5_AI0",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "read_ADC5_AI0",
-        "payload": "{\"value\":0,\"fc\":3,\"unitid\":1,\"address\":40,\"quantity\":1,\"item\":0}",
-        "payloadType": "json",
-        "x": 250,
-        "y": 520,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "e7a858a71ffa59c8",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "update",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "update",
-        "payload": "",
-        "payloadType": "date",
-        "x": 260,
-        "y": 480,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "2422aadd8b4738eb",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "next",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "next",
-        "payload": "",
-        "payloadType": "date",
-        "x": 270,
-        "y": 440,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "670a13996a7fc50c",
-        "type": "change",
-        "z": "f6951d71b64c6ea4",
-        "name": "Advance queue",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "next",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 610,
-        "y": 440,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "1f4d37927e3b5236",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "Modbus Queue",
-        "func": "let resendifnoresposne = true; // resend the last message is no response is received\nlet resendinterval = 10; // resend last e message every x seconds\nlet online_threshold = 10; // Seconds between updates under which the device is considered online\nlet offline_threshold = 300; // Seconds between updates above which the device is considered offline\n\nlet notifmsg = null;\n\n// Check and make sure the incoming message has a topic\nif ((msg.topic===\"\")||(msg.topic===null)||(msg.topic===undefined)) {\n    node.status({fill:\"red\",shape:\"dot\",text:\"Topic missing\"});\n    return;\n}\n\nlet lastupdate = context.get(\"lastupdate\");\nlet state = context.get(\"state\") | 0;\nlet queue = context.get(\"queue\");\nlet queuecount = 0;\nif (queue === undefined) {\n    queue = [];\n} else {\n    if (Array.isArray(queue)) {\n        queuecount = queue.length;\n    } else {\n        queue = [];\n    }\n}\nlet current = new Date().getTime();\nlet send = false;\n\nswitch (msg.topic.toLowerCase()) {\n    case \"update\":\n        // Update the timer and statistics\n\n        if (lastupdate !== undefined) {\n            notifmsg = { \"topic\": \"Information\", \"payload\": {} };\n            current = current - lastupdate;\n            current = Math.floor(current / 1000);\n            notifmsg.payload.secondsincelastupdate = current;\n            var minute = Math.floor(current / 60);\n            var hour = Math.floor(minute / 60);\n            var day = Math.floor(hour / 24);\n            if (current > 24 * 60 * 60) {\n                notifmsg.payload.updatetext = \"Last update \" + day + \" days, \" + hour % 24 + \" hours, \" + minute % 60 + \" minutes, \" + current % 60 + \" seconds ago\";\n            } else if (current > 60 * 60) {\n                notifmsg.payload.updatetext = \"Last update \" + hour % 24 + \" hours, \" + minute % 60 + \" minutes, \" + current % 60 + \" seconds ago\";\n            } else if (current > 60) {\n                notifmsg.payload.updatetext = \"Last update \" + minute % 60 + \" minutes, \" + current % 60 + \" seconds ago\";\n            } else {\n                notifmsg.payload.updatetext = \"Last update \" + current % 60 + \" seconds ago\";\n            }\n\n            // Resend last message if there is no response from the server\n            if (resendifnoresposne) {\n                if ((current>0) && (current % resendinterval===0)) {\n                    let lastmsg = context.get(\"lastmsg\");\n                    if ((lastmsg!==undefined) && (context.get(\"sent\"))) {\n                        notifmsg.payload.resend = true;\n                        if ((lastmsg.payload.fc === 1) || (lastmsg.payload.fc === 2) || (lastmsg.payload.fc === 3) || (lastmsg.payload.fc === 4)) {\n                            // this is a modbus read request\n                            node.status({ fill: \"green\", shape: \"dot\", text: \"Read re-sent!\" });\n                            return [lastmsg, null, notifmsg];\n                        } else {\n                            // this is a modbus write request\n                            node.status({ fill: \"green\", shape: \"dot\", text: \"Write re-sent!\" });\n                            return [null, lastmsg, notifmsg];\n                        }\n                    }\n                }\n            }\n\n            // Check for online state\n            if (state !== 1) {\n                if (current < online_threshold) {\n                    notifmsg.topic = \"Warning\";\n                    notifmsg.payload.text = \"Device is now online\";\n                    notifmsg.payload.statuschange = true;\n                    state = 1;\n                    context.set(\"state\", state);\n                }\n            } else {\n                if (current > offline_threshold) {\n                    notifmsg.topic = \"Error\";\n                    notifmsg.payload.text = \"Device is not transmitting\";\n                    notifmsg.payload.statuschange = true;\n                    state = 99;\n                    context.set(\"state\", state);\n                }\n            }\n            notifmsg.payload.state = state;\n            if (state===1) {\n                node.status({ fill: \"blue\", shape: \"ring\", text: queuecount+ \" | \"+notifmsg.payload.updatetext });\n            } else {\n                node.status({ fill: \"red\", shape: \"ring\", text: queuecount + \" | \" + notifmsg.payload.updatetext });\n            }\n            return [null, null, notifmsg];\n\n        } else {\n            node.status({ fill: \"grey\", shape: \"ring\", text: \"No data\" });\n        }\n        break;\n    case \"next\":\n        // Update the lastupdate counter\n        context.set(\"lastupdate\", current);\n        context.set(\"sent\", false);\n        send = true;\n        break;\n    case \"reset\":\n        context.set(\"queue\",[]);\n        context.set(\"sent\", false);\n        context.set(\"lastmsg\", undefined);\n        break;\n    default:\n        // The incoming message is a modbus request\n\n        // delete the last msg to prevent from being resent\n        // context.set(\"lastmsg\", undefined);\n\n        // Check if there is already a message in the queue with the same topic. \n        // If there is it needs to be deleted, because we only keep the last message.\n        for (let i=queue.length-1; i>=0; i--) {\n            if (queue[i].topic === msg.topic) {\n                queue.splice(i,1);\n            }\n        }\n\n        // Add the message to the end of the queue\n        queue.push(msg);\n        context.set(\"queue\",queue);\n\n        if (!context.get(\"sent\")) {\n            send = true;\n        }\n        node.status({ fill: \"green\", shape: \"dot\", text: queue.length });\n\n}\n\n// We need to send out a new message\nif (send) {\n\n    if (queue.length>0) {\n        // Get the older message from the array\n        let newmsg = queue[0];\n        // remove this message\n        queue.splice(0,1);\n        context.set(\"queue\",queue);\n        context.set(\"sent\", true);\n        context.set(\"lastmsg\", newmsg);\n\n        if ((newmsg.payload.fc === 1) || (newmsg.payload.fc === 2) || (newmsg.payload.fc === 3) || (newmsg.payload.fc === 4)) {\n            // this is a modbus read request\n            node.status({ fill: \"green\", shape: \"dot\", text: \"Read sent!\" });\n            return[newmsg,null,null];\n        } else {\n            // this is a modbus write request\n            node.status({ fill: \"green\", shape: \"dot\", text: \"Write sent!\" });\n            return [null, newmsg, null];\n        }\n        \n    }\n}\n",
-        "outputs": 3,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 560,
-        "wires": [
-            [
-                "704b1231889c54e1"
-            ],
-            [],
-            [
-                "6c7957929f829771"
-            ]
-        ],
-        "info": "# Modbus Queue\r\n\r\nThis node queueing read and write messages for modbus. Use this node if you are reading and writing the same device with many different requests. E.g. reading different coil/register intervals continously and also writing to the device at the same time.\r\n\r\nIt does a few things:\r\n- queues all messages arrive on the input port\r\n- based on the msg.topic, older messages of the same topci is ignored\r\n- sends out the oldest message and waits for the \r\n- monitors the time since last message and send out report on the output\r\n- handles online/offline status\r\n- resend the last message is response is not received in time\r\n\r\n## Input Data\r\n\r\n### payload\r\n\r\nThe payload should contain the data that gets sent to the flex-getter or flex-write node.\r\nTypical modbus read payload:\r\n`{\"value\":0,\"fc\":3,\"unitid\":1,\"address\":1000,\"quantity\":20}`\r\nTypical modbus write payload:\r\n`{\"value\":false,\"fc\":5,\"unitid\":1,\"address\":0,\"quantity\":1}`\r\n\r\n### topic\r\n\r\nEach message must contain a topic (any text), and this topic is used to identify the different read/write requests and delete any earlier request with the same topic if it still in the queueing\r\n\r\nThere are a few reserved topic for special function (for these payload is ignored):\r\n- reset: resets the queue and deleted any data collected so far\r\n- next: this is the message fed back from the flex getter/write node to indicate to this node that a new message can be sent out\r\n- update: this should be coming from a 1 second time to display the current queue count, time since the last update and online/offline status\r\n\r\n## Output ports\r\n\r\n### Port 1: flex getter\r\n\r\nThis output should be connected to a modbos-flex-getter and all the read requests will be sent out through this port\r\n\r\n### Port 2: flex write\r\n\r\nThis output should be connected to a modbos-flex-write and all the write requests will be sent out through this port\r\n\r\n### Port 3: status messages\r\n\r\nThis port outputs a status message for every update message (msg.topic=\"update\").\r\n\r\n- topic: \"Information\" for regular updates, \"Warning\": offline device is now back online, \"Error\": device is offline\r\n- payload.text: message like when the device gone offline, or back online\r\n- payload.updatetext: time passed since the last update (human readable format)\r\n- payload.secondsincelastupdate: number of seconds since the last update from the device\r\n- payload.statuschange: true if status is changed (gone offline, back online)\r\n- payload.state: 0: initial state, no data yet, 1: device online, 99: device offline\r\n\r\n## Node Settings\r\n\r\nChange the settings in the first 4 lines of the code to influence the behaviour. Explanation is in the code as comment."
-    },
-    {
-        "id": "82e8f26c96cec3b9",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "reset",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "update",
-        "payload": "",
-        "payloadType": "date",
-        "x": 270,
-        "y": 400,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "6c7957929f829771",
-        "type": "function",
-        "z": "f6951d71b64c6ea4",
-        "name": "update log",
-        "func": "if (msg.topic === \"Information\") {\n    // Registrar mensajes de información\n    node.log(\"Información: \" + msg.payload.updatetext);\n} else if (msg.topic === \"Warning\") {\n    // Registrar mensajes de advertencia\n    node.warn(\"Advertencia: \" + msg.payload.text);\n} else if (msg.topic === \"Error\") {\n    // Registrar mensajes de error\n    node.error(\"Error: \" + msg.payload.text);\n}\n\n// Puedes agregar lógica adicional para procesar otros campos del mensaje de estado\n// Por ejemplo, puedes verificar el valor de msg.payload.state para realizar acciones específicas\n// según el estado del dispositivo (en línea, fuera de línea, etc.)\n\nreturn msg;",
+        "z": "ef484dfe62883e41",
+        "name": "salidaCalentador",
+        "func": "const valorADCMin = 4000;\nconst valorADCMax = 20000;\nconst valorMin = 0;\nconst valorMax = 1038;\n\nconst valorADC = msg.payload[0];\nconst valorTemperatura = ((valorADC - valorADCMin) / (valorADCMax - valorADCMin)) * (valorMax - valorMin) + valorMin;\n\nmsg.payload = Math.round(valorTemperatura);\nmsg.nombre = \"Salida Calentador\";\nmsg.unidades = \"°C\";\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6c7971902ad42233",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "ADC5_AI1",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "read_ADC5_AI1",
-        "payload": "{\"value\":0,\"fc\":3,\"unitid\":1,\"address\":41,\"quantity\":1}",
-        "payloadType": "json",
-        "x": 250,
-        "y": 560,
+        "x": 1690,
+        "y": 300,
         "wires": [
             [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "99e752a25ff5eadb",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "ADC5_AI2",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "read_ADC5_AI2",
-        "payload": "{\"value\":0,\"fc\":3,\"unitid\":1,\"address\":42,\"quantity\":1}",
-        "payloadType": "json",
-        "x": 250,
-        "y": 600,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "704b1231889c54e1",
-        "type": "modbus-flex-getter",
-        "z": "f6951d71b64c6ea4",
-        "name": "ADC-TC-03",
-        "showStatusActivities": true,
-        "showErrors": true,
-        "showWarnings": true,
-        "logIOActivities": false,
-        "server": "1d0d79e17648cf5a",
-        "useIOFile": false,
-        "ioFile": "",
-        "useIOForPayload": false,
-        "emptyMsgOnFail": false,
-        "keepMsgProperties": true,
-        "delayOnStart": false,
-        "startDelayTime": "",
-        "x": 770,
-        "y": 540,
-        "wires": [
-            [
-                "f419582255310f6d",
-                "670a13996a7fc50c"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "f419582255310f6d",
-        "type": "switch",
-        "z": "f6951d71b64c6ea4",
-        "name": "ADC5 Registers",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "read_ADC5_AI0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC5_AI1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC5_AI2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC5_AI3",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 1020,
-        "y": 540,
-        "wires": [
-            [
-                "333780b073541cf7"
-            ],
-            [
-                "5459bd8a7899cff6"
-            ],
-            [
-                "ce8657f427243ff9"
-            ],
-            [
-                "8786665ea9feb5da"
-            ]
-        ]
-    },
-    {
-        "id": "3a3faefd147189de",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "ADC5_AI3",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "2",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "read_ADC5_AI3",
-        "payload": "{\"value\":0,\"fc\":3,\"unitid\":1,\"address\":43,\"quantity\":1}",
-        "payloadType": "json",
-        "x": 250,
-        "y": 640,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
-            ]
-        ]
-    },
-    {
-        "id": "984de0a1bfbe98f1",
-        "type": "inject",
-        "z": "f6951d71b64c6ea4",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 250,
-        "y": 680,
-        "wires": [
-            [
-                "1f4d37927e3b5236"
+                "e72027eda7951399"
             ]
         ]
     },
@@ -3995,14 +3003,15 @@
         "y": 720,
         "wires": [
             [
-                "ba1fca1ce4527c9f"
+                "6d34fe1cdc2e37e7",
+                "43cec8ccf957d186"
             ],
             [
-                "7a81c465a2fd907f"
+                "7dbd72f118d1fb17"
             ],
             [],
             [
-                "1368e955718fa813"
+                "548bb0a751518483"
             ],
             [],
             [],
@@ -4156,258 +3165,6 @@
             [
                 "a3a556a1e3a2394d"
             ]
-        ]
-    },
-    {
-        "id": "ba1fca1ce4527c9f",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "calc_vol_FA-01",
-        "func": "const valorCrudo = msg.payload.data[0];\nconst valorLitros = ((valorCrudo - 20000) / (4000 - 20000)) * (113307 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 680,
-        "wires": [
-            [
-                "60977eea11983ef3"
-            ]
-        ]
-    },
-    {
-        "id": "d9896c8e57f4c569",
-        "type": "ui-chart",
-        "z": "237db71295252168",
-        "group": "f48946a759fc012c",
-        "name": "Volumen FA-01",
-        "label": "Volumen FA-01",
-        "order": 1,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "category",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "113000",
-        "action": "replace",
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": false,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#227dbf",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "width": "1",
-        "height": "5",
-        "className": "",
-        "x": 1760,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "60977eea11983ef3",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1570,
-        "y": 680,
-        "wires": [
-            [
-                "d9896c8e57f4c569"
-            ]
-        ]
-    },
-    {
-        "id": "7a81c465a2fd907f",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "calc_vol_FA-09",
-        "func": "const valorCrudo = msg.payload.data[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (19000 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 640,
-        "wires": [
-            [
-                "5247d5babf92f2f1"
-            ]
-        ]
-    },
-    {
-        "id": "0a02fc65143273aa",
-        "type": "ui-chart",
-        "z": "237db71295252168",
-        "group": "f48946a759fc012c",
-        "name": "Volumen FA-09",
-        "label": "Volumen FA-09",
-        "order": 1,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "category",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "19000",
-        "action": "replace",
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": false,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#227dbf",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "width": "1",
-        "height": "5",
-        "className": "",
-        "x": 1760,
-        "y": 640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5247d5babf92f2f1",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1570,
-        "y": 640,
-        "wires": [
-            [
-                "0a02fc65143273aa"
-            ]
-        ]
-    },
-    {
-        "id": "1368e955718fa813",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "calc_vol_FA-2B",
-        "func": "const valorCrudo = msg.payload.data[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (20000 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 720,
-        "wires": [
-            [
-                "8a4054492ab4cfd0"
-            ]
-        ]
-    },
-    {
-        "id": "8a4054492ab4cfd0",
-        "type": "function",
-        "z": "237db71295252168",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1570,
-        "y": 720,
-        "wires": [
-            [
-                "54bfd218982c5c19"
-            ]
-        ]
-    },
-    {
-        "id": "54bfd218982c5c19",
-        "type": "ui-chart",
-        "z": "237db71295252168",
-        "group": "f48946a759fc012c",
-        "name": "Volumen FA-2B",
-        "label": "Volumen FA-2A",
-        "order": 1,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "category",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "19000",
-        "action": "replace",
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": false,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#1a5fb4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "width": "1",
-        "height": "5",
-        "className": "",
-        "x": 1760,
-        "y": 720,
-        "wires": [
-            []
         ]
     },
     {
@@ -4577,6 +3334,111 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "1239ddb151764d3c",
+        "type": "link out",
+        "z": "237db71295252168",
+        "name": "TC-RE-05",
+        "mode": "link",
+        "links": [
+            "d28bdcf38e2d85e2",
+            "c64e80cac0381523"
+        ],
+        "x": 1695,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6d34fe1cdc2e37e7",
+        "type": "function",
+        "z": "237db71295252168",
+        "name": "calc_vol_FA-01",
+        "func": "// Extraer el valor del objeto msg.payload.data[0]\nconst valorCrudo = msg.payload.data[0];\n\n// Verificar si es un número válido\nif (valorCrudo === undefined || isNaN(valorCrudo)) {\n    node.warn(\"Valor no numérico o indefinido: \" + valorCrudo);\n    msg.payload = \"Error: Valor no válido\";\n    msg.nombre = \"Volumen FA-01\";\n    msg.unidades = \"Litros\";\n    return msg;\n}\n\n// Calcular el volumen\nconst valorLitros = ((valorCrudo - 20000) / (4000 - 20000)) * (113307 - 0);\nmsg.payload = Math.round(valorLitros);\nmsg.nombre = \"Volumen FA-01\";\nmsg.unidades = \"Litros\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 640,
+        "wires": [
+            [
+                "1239ddb151764d3c",
+                "6e1b6f7235f8f97a"
+            ]
+        ]
+    },
+    {
+        "id": "548bb0a751518483",
+        "type": "function",
+        "z": "237db71295252168",
+        "name": "calc_vol_FA-2B",
+        "func": "const valorCrudo = msg.payload;\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (20000 - 0);\nmsg.payload = Math.round(valorLitros);\nmsg.nombre = \"Volumen FA-2A\";\nmsg.unidades = \"Litros\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dbd72f118d1fb17",
+        "type": "function",
+        "z": "237db71295252168",
+        "name": "calc_vol_FA-09",
+        "func": "// Determinar el valor crudo basado en la estructura de datos\nlet valorCrudo;\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    valorCrudo = msg.payload[0];\n} else if (typeof msg.payload === 'object' && msg.payload !== null && msg.payload.data) {\n    valorCrudo = Array.isArray(msg.payload.data) ? msg.payload.data[0] : msg.payload.data;\n} else {\n    valorCrudo = msg.payload;\n}\n\n// Asegurar que valorCrudo sea un número\nvalorCrudo = Number(valorCrudo);\nif (isNaN(valorCrudo)) {\n    valorCrudo = 0;\n    node.warn(\"Valor no numérico detectado: \" + JSON.stringify(msg.payload));\n}\n\n// Cálculo del volumen\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (19000 - 0);\nmsg.payload = Math.round(valorLitros);\nmsg.nombre = \"Volumen FA-09\";\nmsg.unidades = \"Litros\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 680,
+        "wires": [
+            [
+                "1239ddb151764d3c"
+            ]
+        ]
+    },
+    {
+        "id": "6e1b6f7235f8f97a",
+        "type": "debug",
+        "z": "237db71295252168",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1550,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "43cec8ccf957d186",
+        "type": "debug",
+        "z": "237db71295252168",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 540,
+        "wires": []
     },
     {
         "id": "5e9f45f078d99766",
@@ -4984,60 +3846,19 @@
         "id": "57535c28529681a8",
         "type": "function",
         "z": "1eb03b4f8f90f9d8",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "name": "salidaAsfalto",
+        "func": "// Para el nodo \"calc temp\" (57535c28529681a8) - Salida Asfalto\nlet temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nmsg.nombre = \"Salida Asfalto\";\nmsg.unidades = \"°C\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1250,
         "y": 460,
         "wires": [
             [
-                "70e7c024682b436a"
-            ]
-        ]
-    },
-    {
-        "id": "c54d52a4c69a9dd7",
-        "type": "ui-text",
-        "z": "1eb03b4f8f90f9d8",
-        "group": "8fb5f9956f9e15f0",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "name": "Salida Asfalto",
-        "label": "Salida Asfalto",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1580,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "70e7c024682b436a",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 460,
-        "wires": [
-            [
-                "c54d52a4c69a9dd7"
+                "c0231489540b4e4d"
             ]
         ]
     },
@@ -5045,60 +3866,19 @@
         "id": "4be8d18542c9a04c",
         "type": "function",
         "z": "1eb03b4f8f90f9d8",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "name": "salidaHCD",
+        "func": "// Para el nodo \"calc temp\" (4be8d18542c9a04c) - Salida HCD\nlet temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nmsg.nombre = \"Salida HCD\";\nmsg.unidades = \"°C\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1250,
         "y": 500,
         "wires": [
             [
-                "d0a12c79eba2a181"
-            ]
-        ]
-    },
-    {
-        "id": "1b2dee1aef989956",
-        "type": "ui-text",
-        "z": "1eb03b4f8f90f9d8",
-        "group": "8fb5f9956f9e15f0",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "name": "Salida HCD",
-        "label": "Salida HCD",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1590,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "d0a12c79eba2a181",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 500,
-        "wires": [
-            [
-                "1b2dee1aef989956"
+                "c0231489540b4e4d"
             ]
         ]
     },
@@ -5106,60 +3886,20 @@
         "id": "b64b7ffe3203889c",
         "type": "function",
         "z": "1eb03b4f8f90f9d8",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "d": true,
+        "name": "entradaResiduo",
+        "func": "// Para el nodo \"calc temp\" (b64b7ffe3203889c) - Entrada Residuo\nlet temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nmsg.nombre = \"Entrada Residuo\";\nmsg.unidades = \"°C\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1260,
         "y": 380,
         "wires": [
             [
-                "d565e625a2fa25ae"
-            ]
-        ]
-    },
-    {
-        "id": "7b85205059597a67",
-        "type": "ui-text",
-        "z": "1eb03b4f8f90f9d8",
-        "group": "8fb5f9956f9e15f0",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "name": "Entrada Residuo",
-        "label": "Entrada Residuo",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1570,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "d565e625a2fa25ae",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 380,
-        "wires": [
-            [
-                "7b85205059597a67"
+                "c0231489540b4e4d"
             ]
         ]
     },
@@ -5167,60 +3907,20 @@
         "id": "cf56faf8d34882c8",
         "type": "function",
         "z": "1eb03b4f8f90f9d8",
-        "name": "calc temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nreturn msg;\n",
+        "d": true,
+        "name": "salidaResiduo",
+        "func": "// Para el nodo \"calc temp\" (cf56faf8d34882c8) - Salida Residuo\nlet temperature = msg.payload;\nmsg.payload = Math.round(temperature * 0.1); // Redondear y mantener como número\nmsg.nombre = \"Salida Residuo\";\nmsg.unidades = \"°C\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1260,
         "y": 420,
         "wires": [
             [
-                "c2b04d696ca8297c"
-            ]
-        ]
-    },
-    {
-        "id": "684af736f7c6871c",
-        "type": "ui-text",
-        "z": "1eb03b4f8f90f9d8",
-        "group": "8fb5f9956f9e15f0",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "name": "Salida Residuo",
-        "label": "Salida Residuo",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "Helvetica, sans-serif",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 1580,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "c2b04d696ca8297c",
-        "type": "function",
-        "z": "1eb03b4f8f90f9d8",
-        "name": "Format temp",
-        "func": "let temperature = msg.payload;\nmsg.payload = temperature + \"°C\"; // Añade la unidad °C al número\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1390,
-        "y": 420,
-        "wires": [
-            [
-                "684af736f7c6871c"
+                "c0231489540b4e4d"
             ]
         ]
     },
@@ -5339,6 +4039,20 @@
                 "34559fc6ca703fdf"
             ]
         ]
+    },
+    {
+        "id": "c0231489540b4e4d",
+        "type": "link out",
+        "z": "1eb03b4f8f90f9d8",
+        "name": "TC-RE-05",
+        "mode": "link",
+        "links": [
+            "d28bdcf38e2d85e2",
+            "c64e80cac0381523"
+        ],
+        "x": 1485,
+        "y": 440,
+        "wires": []
     },
     {
         "id": "6c245f577a76ebfa",
@@ -5633,81 +4347,8 @@
         "wires": [
             [
                 "1ab18490d1c31303",
-                "05d0ac079e9742f8"
+                "3e7b64cc97c2f7f5"
             ],
-            []
-        ]
-    },
-    {
-        "id": "05d0ac079e9742f8",
-        "type": "switch",
-        "z": "a0c3bb5123a98cbc",
-        "name": "ADC-TC-06 CANALES",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI0",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI2",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI5",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI6",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "read_ADC3_AI7",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 8,
-        "x": 980,
-        "y": 440,
-        "wires": [
-            [],
-            [
-                "d379b4c9d2ab0ec8"
-            ],
-            [],
-            [
-                "52f396e7d97a9777"
-            ],
-            [
-                "84f0d3e69dccdfb9"
-            ],
-            [
-                "b074a28ed8cdd104"
-            ],
-            [],
             []
         ]
     },
@@ -5828,258 +4469,6 @@
         ]
     },
     {
-        "id": "52f396e7d97a9777",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "calc_vol_FA-04",
-        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (65000 - 3200);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1280,
-        "y": 400,
-        "wires": [
-            [
-                "2a64d686af8139e0"
-            ]
-        ]
-    },
-    {
-        "id": "a4092641451534e8",
-        "type": "ui-chart",
-        "z": "a0c3bb5123a98cbc",
-        "group": "485ecec3c95ed560",
-        "name": "Volumen FA-04",
-        "label": "Volumen FA-04",
-        "order": 1,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "category",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "63000",
-        "action": "replace",
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": false,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#227dbf",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "width": "1",
-        "height": "5",
-        "className": "",
-        "x": 1740,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2a64d686af8139e0",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 400,
-        "wires": [
-            [
-                "a4092641451534e8"
-            ]
-        ]
-    },
-    {
-        "id": "84f0d3e69dccdfb9",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "calc_vol_FA-06A",
-        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 3980)) / (20000 - 3980) * (66300 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1270,
-        "y": 440,
-        "wires": [
-            [
-                "4be8b38837695c30"
-            ]
-        ]
-    },
-    {
-        "id": "2cfe75546025340b",
-        "type": "ui-chart",
-        "z": "a0c3bb5123a98cbc",
-        "group": "485ecec3c95ed560",
-        "name": "Volumen FA-06A",
-        "label": "Volumen FA-06A",
-        "order": 1,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "property",
-        "xAxisType": "category",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "67500",
-        "action": "replace",
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": false,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#227dbf",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "width": "1",
-        "height": "5",
-        "className": "",
-        "x": 1730,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4be8b38837695c30",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 440,
-        "wires": [
-            [
-                "2cfe75546025340b"
-            ]
-        ]
-    },
-    {
-        "id": "d379b4c9d2ab0ec8",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "calc_vol_FA-06B",
-        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (4000 - 20000)) * (0 - 94100);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1270,
-        "y": 360,
-        "wires": [
-            [
-                "8b89f9dc3ff26392"
-            ]
-        ]
-    },
-    {
-        "id": "f30b056ac847726d",
-        "type": "ui-chart",
-        "z": "a0c3bb5123a98cbc",
-        "group": "485ecec3c95ed560",
-        "name": "Volumen FA-06B",
-        "label": "Volumen FA-06B",
-        "order": 1,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "msg",
-        "xAxisType": "category",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "93000",
-        "action": "replace",
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": false,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#227dbf",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "width": "1",
-        "height": "5",
-        "className": "",
-        "x": 1730,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8b89f9dc3ff26392",
-        "type": "function",
-        "z": "a0c3bb5123a98cbc",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 360,
-        "wires": [
-            [
-                "f30b056ac847726d"
-            ]
-        ]
-    },
-    {
         "id": "4f24d892674dd220",
         "type": "inject",
         "z": "a0c3bb5123a98cbc",
@@ -6109,11 +4498,11 @@
         ]
     },
     {
-        "id": "b074a28ed8cdd104",
+        "id": "0cb330b4bb903e80",
         "type": "function",
         "z": "a0c3bb5123a98cbc",
-        "name": "calc_vol_FA-06C",
-        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 3990)) / (20000 - 3990) * (34755 - 0);\nmsg.payload = Math.round(valorLitros);  // Mantener solo el valor numérico\nreturn msg;\n",
+        "name": "calc_vol_FA-06B",
+        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (4000 - 20000)) * (0 - 94100);\nmsg.payload = Math.round(valorLitros);  // Valor numérico calculado\nmsg.nombre = \"Volumen FA-06B\";  // Nombre del sensor\nmsg.unidades = \"Litros\";        // Unidades\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6121,86 +4510,428 @@
         "finalize": "",
         "libs": [],
         "x": 1270,
-        "y": 480,
+        "y": 580,
         "wires": [
             [
-                "31326574eb3d5bf1"
+                "d52369388cd60329"
             ]
         ]
     },
     {
-        "id": "31326574eb3d5bf1",
+        "id": "772f5fdb7f804362",
         "type": "function",
         "z": "a0c3bb5123a98cbc",
-        "name": "formato_ui",
-        "func": "msg.payload = {\n    value: msg.payload,\n    label: msg.payload + \" Litros\"\n};\nreturn msg;",
+        "name": "calc_vol_FA-04",
+        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 4000) / (20000 - 4000)) * (65000 - 3200);\nmsg.payload = Math.round(valorLitros);  // Valor numérico calculado\nmsg.nombre = \"Volumen FA-04\";  // Nombre del sensor\nmsg.unidades = \"Litros\";       // Unidades\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1490,
-        "y": 480,
+        "x": 1280,
+        "y": 620,
         "wires": [
             [
-                "6f7312c3e91b82a4"
+                "d52369388cd60329"
             ]
         ]
     },
     {
-        "id": "6f7312c3e91b82a4",
-        "type": "ui-chart",
+        "id": "39b599f0bf5b27d4",
+        "type": "function",
         "z": "a0c3bb5123a98cbc",
-        "group": "485ecec3c95ed560",
-        "name": "Volumen FA-06C",
-        "label": "Volumen FA-06C",
-        "order": 1,
-        "chartType": "bar",
-        "category": "label",
-        "categoryType": "property",
-        "xAxisLabel": "",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "property",
-        "xAxisType": "category",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "yAxisLabel": "",
-        "yAxisProperty": "value",
-        "ymin": "0",
-        "ymax": "34755",
-        "action": "replace",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": false,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#227dbf",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
+        "name": "calc_vol_FA-06A",
+        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 3980) / (20000 - 3980)) * (66300 - 0);\nmsg.payload = Math.round(valorLitros);  // Valor numérico calculado\nmsg.nombre = \"Volumen FA-06A\";  // Nombre del sensor\nmsg.unidades = \"Litros\";        // Unidades\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 660,
+        "wires": [
+            [
+                "d52369388cd60329"
+            ]
+        ]
+    },
+    {
+        "id": "5a17e80f5c3f3b94",
+        "type": "function",
+        "z": "a0c3bb5123a98cbc",
+        "name": "calc_vol_FA-06C",
+        "func": "const valorCrudo = msg.payload[0];\nconst valorLitros = ((valorCrudo - 3990) / (20000 - 3990)) * (34755 - 0);\nmsg.payload = Math.round(valorLitros);  // Valor numérico calculado\nmsg.nombre = \"Volumen FA-06C\";  // Nombre del sensor\nmsg.unidades = \"Litros\";        // Unidades\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 700,
+        "wires": [
+            [
+                "d52369388cd60329"
+            ]
+        ]
+    },
+    {
+        "id": "3e7b64cc97c2f7f5",
+        "type": "switch",
+        "z": "a0c3bb5123a98cbc",
+        "name": "ADC-TC-06 CANALES",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "read_ADC3_AI7",
+                "vt": "str"
+            }
         ],
-        "textColor": [
-            "#666666"
+        "checkall": "true",
+        "repair": false,
+        "outputs": 8,
+        "x": 980,
+        "y": 660,
+        "wires": [
+            [],
+            [
+                "0cb330b4bb903e80"
+            ],
+            [],
+            [
+                "772f5fdb7f804362"
+            ],
+            [
+                "39b599f0bf5b27d4"
+            ],
+            [
+                "5a17e80f5c3f3b94"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d52369388cd60329",
+        "type": "link out",
+        "z": "a0c3bb5123a98cbc",
+        "name": "TC-RE-05",
+        "mode": "link",
+        "links": [
+            "c64e80cac0381523"
         ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
+        "x": 1438.0069580078125,
+        "y": 648.5694580078125,
+        "wires": []
+    },
+    {
+        "id": "c64e80cac0381523",
+        "type": "link in",
+        "z": "e2b9859944ef07b2",
+        "name": "UI",
+        "links": [
+            "1239ddb151764d3c",
+            "c0231489540b4e4d",
+            "d52369388cd60329",
+            "e72027eda7951399"
         ],
-        "gridColorDefault": true,
-        "width": "1",
+        "x": 625,
+        "y": 380,
+        "wires": [
+            [
+                "5b0d4a5032e573b2"
+            ]
+        ]
+    },
+    {
+        "id": "5b0d4a5032e573b2",
+        "type": "function",
+        "z": "e2b9859944ef07b2",
+        "name": "Formato para UI Tabla",
+        "func": "// Verificar que hay información básica disponible\nif (!msg.nombre) {\n    msg.nombre = msg.topic || \"Sensor sin nombre\";\n}\n\nif (!msg.unidades) {\n    msg.unidades = \"\";\n}\n\n// Asegurar que hay un payload válido\nif (msg.payload === undefined || msg.payload === null) {\n    msg.payload = \"N/A\";\n}\n\n// Crear o recuperar objeto para la tabla (usar un objeto en lugar de array)\nlet sensoresMap = flow.get(\"sensoresMapData\") || {};\n\n// Asignar un identificador único para este sensor\nconst sensorId = msg.nombre;\n\n// Obtener estilo según categoría del sensor\nconst estilo = getEstilo(msg.nombre);\nconst orden = getOrden(msg.nombre);\n\n// Registrar el tiempo actual\nconst timestamp = Date.now();\n\n// Obtener el estilo para el tiempo según la categoría\nconst estiloTiempo = getEstiloTiempo(msg.nombre);\n\n// Formatear el valor con comas para los miles si es numérico\nlet valorFormateado = msg.payload;\nif (!isNaN(msg.payload) && typeof msg.payload !== 'boolean') {\n    // Verificar si el valor es un número\n    valorFormateado = formatearNumero(msg.payload);\n}\n\n// Actualizar los datos del sensor en el mapa\nsensoresMap[sensorId] = {\n    nombre: `<div style=\"${estilo.nombre}\">${msg.nombre}</div>`,\n    valor: `<div style=\"${estilo.valor}\">${valorFormateado}</div>`,\n    unidades: `<div style=\"${estilo.unidad}\">${msg.unidades}</div>`,\n    tiempo: `<div style=\"${estiloTiempo}\">hace 0 seg</div>`,\n    timestamp: timestamp,\n    ordenReal: orden\n};\n\n// Convertir el mapa a un array para la tabla, ordenando por la propiedad ordenReal\nlet tableData = Object.values(sensoresMap);\ntableData.sort((a, b) => a.ordenReal - b.ordenReal);\n\n// Guardar el mapa actualizado en el contexto\nflow.set(\"sensoresMapData\", sensoresMap);\n\n// Enviar datos a la tabla\nmsg.payload = tableData;\nreturn msg;\n\n// Función para formatear números con comas para los miles\nfunction formatearNumero(numero) {\n    return numero.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n}\n\n// Función para asignar orden personalizado a cada sensor\nfunction getOrden(nombre) {\n    const ordenSensores = {\n        \"Volumen FA-02\": 1,\n        \"Flujo Materia Prima\": 2,\n        \"Salida Calentador\": 3,\n        \"Presión Alimentación\": 4,\n        \"Salida HCD\": 5,\n        \"Entrada Calentador\": 6,\n        \"Salida Asfalto\": 7,\n        \"Volumen FA-01\": 8,\n        \"Volumen FA-04\": 9,\n        \"Volumen FA-06A\": 10,\n        \"Volumen FA-06B\": 11,\n        \"Volumen FA-06C\": 12,\n        \"Volumen FA-09\": 13\n    };\n    \n    return ordenSensores[nombre] || 999; // Valor alto para sensores sin orden específico\n}\n\n// Función para generar estilos CSS según el nombre del sensor\nfunction getEstilo(nombre) {\n    // Definir categorías de sensores\n    const sensoresGigantes = [\"Volumen FA-02\", \"Flujo Materia Prima\", \"Salida Calentador\"];\n    const sensoresGrandes = [\"Presión Alimentación\", \"Salida HCD\"];\n    const sensoresMedianos = [\"Entrada Calentador\", \"Salida Asfalto\"];\n    \n    let estilo = {\n        nombre: \"text-align: left; padding: 8px;\",\n        valor: \"text-align: center; font-weight: bold; padding: 8px;\",\n        unidad: \"text-align: left; padding: 8px;\"\n    };\n    \n    // Aplicar estilos según la categoría del sensor\n    if (sensoresGigantes.includes(nombre)) {\n        estilo.nombre += \"font-size: 38px; font-weight: bold; color: #0000cc; background-color: #f0f4ff; padding: 16px 8px;\";\n        estilo.valor += \"font-size: 46px; color: #0000cc; background-color: #f0f4ff; padding: 16px 8px;\";\n        estilo.unidad += \"font-size: 38px; color: #0000cc; background-color: #f0f4ff; padding: 16px 8px;\";\n    } else if (sensoresGrandes.includes(nombre)) {\n        estilo.nombre += \"font-size: 30px; font-weight: bold; color: #000000; background-color: #f8f8f8; padding: 12px 8px;\";\n        estilo.valor += \"font-size: 30px; color: #000000; background-color: #f8f8f8; padding: 12px 8px;\";\n        estilo.unidad += \"font-size: 30px; color: #000000; background-color: #f8f8f8; padding: 12px 8px;\";\n    } else if (sensoresMedianos.includes(nombre)) {\n        estilo.nombre += \"font-size: 26px; font-weight: 500; color: #444444; padding: 10px 8px;\";\n        estilo.valor += \"font-size: 26px; color: #444444; padding: 10px 8px;\";\n        estilo.unidad += \"font-size: 26px; color: #444444; padding: 10px 8px;\";\n    } else {\n        estilo.nombre += \"font-size: 20px; color: #444444;\";\n        estilo.valor += \"font-size: 20px; color: #444444;\";\n        estilo.unidad += \"font-size: 20px; color: #444444;\";\n    }\n    \n    return estilo;\n}\n\n// Función para estilo de tiempo\nfunction getEstiloTiempo(nombre) {\n    // Definir categorías de sensores\n    const sensoresGigantes = [\"Volumen FA-02\", \"Flujo Materia Prima\", \"Salida Calentador\"];\n    const sensoresGrandes = [\"Presión Alimentación\", \"Salida HCD\"];\n    const sensoresMedianos = [\"Entrada Calentador\", \"Salida Asfalto\"];\n    \n    let estiloBase = \"text-align: right; color: #666666;\";\n    \n    // Estilos base según la importancia del sensor\n    if (sensoresGigantes.includes(nombre)) {\n        return estiloBase + \" font-size: 24px; padding: 16px 8px;\";\n    } else if (sensoresGrandes.includes(nombre)) {\n        return estiloBase + \" font-size: 20px; padding: 12px 8px;\";\n    } else if (sensoresMedianos.includes(nombre)) {\n        return estiloBase + \" font-size: 18px; padding: 10px 8px;\";\n    } else {\n        return estiloBase + \" font-size: 16px; padding: 8px;\";\n    }\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Inicializar el array de datos al cargar\nflow.set(\"sensorTableData\", []);",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 380,
+        "wires": [
+            [
+                "195b07cec97cd884"
+            ]
+        ]
+    },
+    {
+        "id": "ee326c85fcd249d3",
+        "type": "function",
+        "z": "e2b9859944ef07b2",
+        "name": "Actualización de tiempos",
+        "func": "// Este nodo debería ejecutarse cada segundo con un nodo inject\nlet sensoresMap = flow.get(\"sensoresMapData\") || {};\n\n// Actualizar los tiempos transcurridos para todos los sensores\nObject.keys(sensoresMap).forEach(key => {\n    const sensor = sensoresMap[key];\n    if (sensor.timestamp) {\n        const tiempoTranscurrido = Math.floor((Date.now() - sensor.timestamp) / 1000);\n        \n        // Determinar el estilo de tiempo basado en la categoría del sensor\n        const estiloTiempo = getEstiloTiempo(key);\n        \n        sensor.tiempo = `<div style=\"${estiloTiempo}\">hace ${tiempoTranscurrido} seg</div>`;\n    }\n});\n\n// Convertir el mapa a un array para la tabla, ordenando por la propiedad ordenReal\nlet tableData = Object.values(sensoresMap);\ntableData.sort((a, b) => a.ordenReal - b.ordenReal);\n\n// Guardar el mapa actualizado en el contexto\nflow.set(\"sensoresMapData\", sensoresMap);\n\n// Enviar datos a la tabla\nmsg.payload = tableData;\nreturn msg;\n\n// Función para determinar estilo del tiempo basado en la categoría\nfunction getEstiloTiempo(nombre) {\n    // Definir categorías de sensores\n    const sensoresGigantes = [\"Volumen FA-02\", \"Flujo Materia Prima\", \"Salida Calentador\"];\n    const sensoresGrandes = [\"Presión Alimentación\", \"Salida HCD\"];\n    const sensoresMedianos = [\"Entrada Calentador\", \"Salida Asfalto\"];\n    \n    let estiloBase = \"text-align: right; color: #666666;\";\n    \n    // Estilos base según la importancia del sensor\n    if (sensoresGigantes.includes(nombre)) {\n        return estiloBase + \" font-size: 24px; padding: 16px 8px;\";\n    } else if (sensoresGrandes.includes(nombre)) {\n        return estiloBase + \" font-size: 20px; padding: 12px 8px;\";\n    } else if (sensoresMedianos.includes(nombre)) {\n        return estiloBase + \" font-size: 18px; padding: 10px 8px;\";\n    } else {\n        return estiloBase + \" font-size: 16px; padding: 8px;\";\n    }\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 420,
+        "wires": [
+            [
+                "195b07cec97cd884"
+            ]
+        ]
+    },
+    {
+        "id": "a060ea74a19a072a",
+        "type": "inject",
+        "z": "e2b9859944ef07b2",
+        "name": "Actualizar cada 1s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "ee326c85fcd249d3"
+            ]
+        ]
+    },
+    {
+        "id": "195b07cec97cd884",
+        "type": "ui-table",
+        "z": "e2b9859944ef07b2",
+        "group": "3f690bb5a526a246",
+        "name": "Tabla de Sensores",
+        "label": "Valores de Sensores",
+        "order": 3,
+        "width": "12",
         "height": "5",
+        "maxrows": "",
+        "autocols": false,
+        "showSearch": false,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "Sensor",
+                "key": "nombre",
+                "type": "html",
+                "width": "30%",
+                "align": "start",
+                "sorter": false
+            },
+            {
+                "title": "Valor",
+                "key": "valor",
+                "type": "html",
+                "width": "20%",
+                "align": "center",
+                "sorter": false
+            },
+            {
+                "title": "Unidades",
+                "key": "unidades",
+                "type": "html",
+                "width": "15%",
+                "align": "start",
+                "sorter": false
+            },
+            {
+                "title": "Última actualización",
+                "key": "tiempo",
+                "type": "html",
+                "width": "35%",
+                "align": "end",
+                "sorter": false
+            }
+        ],
+        "mobileBreakpoint": "lg",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "x": 1030,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "shutdown-button",
+        "type": "ui-button",
+        "z": "e2b9859944ef07b2",
+        "group": "3f690bb5a526a246",
+        "name": "",
+        "label": "Apagar Sistema",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "emulateClick": false,
+        "tooltip": "Apaga completamente el sistema",
+        "color": "white",
+        "bgcolor": "#c21717",
         "className": "",
-        "x": 1730,
-        "y": 480,
+        "icon": "fa-power-off",
+        "iconPosition": "left",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "power",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "x": 520,
+        "y": 520,
+        "wires": [
+            [
+                "power-confirm"
+            ]
+        ]
+    },
+    {
+        "id": "reboot-button",
+        "type": "ui-button",
+        "z": "e2b9859944ef07b2",
+        "group": "3f690bb5a526a246",
+        "label": "Reiniciar Sistema",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "tooltip": "Reinicia el sistema",
+        "color": "white",
+        "bgcolor": "#e67e22",
+        "className": "",
+        "icon": "fa-refresh",
+        "payload": "reboot",
+        "payloadType": "str",
+        "topic": "power",
+        "topicType": "str",
+        "x": 520,
+        "y": 560,
+        "wires": [
+            [
+                "power-confirm"
+            ]
+        ]
+    },
+    {
+        "id": "power-confirm",
+        "type": "ui-notification",
+        "z": "e2b9859944ef07b2",
+        "ui": "bc1023506614f084",
+        "position": "center",
+        "colorDefault": false,
+        "color": "#000000",
+        "displayTime": "",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": false,
+        "dismissText": "",
+        "allowConfirm": false,
+        "confirmText": "",
+        "raw": false,
+        "className": "",
+        "name": "Confirmación",
+        "x": 700,
+        "y": 540,
+        "wires": [
+            [
+                "power-exec"
+            ]
+        ]
+    },
+    {
+        "id": "power-exec",
+        "type": "function",
+        "z": "e2b9859944ef07b2",
+        "name": "Ejecutar comando",
+        "func": "const exec = require('child_process').exec;\n\n// Verificar si el usuario confirmó la acción\nif (msg.payload === \"cancel\") {\n    return null; // No hacer nada si el usuario cancela\n}\n\n// Recuperar la acción original (shutdown o reboot) del topic\nconst accion = msg.topic;\n\n// Determinar el comando según el sistema operativo\nlet comando;\nconst plataforma = process.platform;\n\n// Definir el comando según el sistema operativo\nif (plataforma === \"win32\") { // Windows\n    if (accion === \"shutdown\") {\n        comando = 'shutdown /s /t 15'; // Apagar con 15 segundos de retraso\n    } else if (accion === \"reboot\") {\n        comando = 'shutdown /r /t 15'; // Reiniciar con 15 segundos de retraso\n    }\n} else if (plataforma === \"linux\" || plataforma === \"darwin\") { // Linux o macOS\n    if (accion === \"shutdown\") {\n        comando = 'sudo shutdown -h now'; // Apagar inmediatamente\n    } else if (accion === \"reboot\") {\n        comando = 'sudo reboot'; // Reiniciar inmediatamente\n    }\n}\n\n// Ejecutar el comando si se ha definido\nif (comando) {\n    // Mostrar mensaje de aviso\n    node.warn(`Ejecutando comando: ${comando}`);\n    \n    // Ejecutar el comando\n    exec(comando, (error, stdout, stderr) => {\n        if (error) {\n            node.error(`Error al ejecutar el comando: ${error}`);\n            return;\n        }\n    });\n    \n    // Informar al usuario\n    const accionTexto = accion === \"shutdown\" ? \"apagando\" : \"reiniciando\";\n    msg.payload = `Sistema ${accionTexto} en 15 segundos...`;\n    return msg;\n} else {\n    msg.payload = \"Comando no reconocido o sistema operativo no compatible\";\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 540,
+        "wires": [
+            [
+                "power-status"
+            ]
+        ]
+    },
+    {
+        "id": "power-status",
+        "type": "ui-notification",
+        "z": "e2b9859944ef07b2",
+        "ui": "bc1023506614f084",
+        "position": "top",
+        "colorDefault": false,
+        "color": "#000000",
+        "displayTime": 15,
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": false,
+        "dismissText": "",
+        "allowConfirm": false,
+        "confirmText": "",
+        "raw": false,
+        "className": "",
+        "name": "Estado",
+        "x": 1040,
+        "y": 540,
         "wires": [
             []
         ]
