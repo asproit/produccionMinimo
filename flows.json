@@ -872,7 +872,6 @@
             "ui-control"
         ],
         "showPathInSidebar": false,
-        "showPageTitle": true,
         "navigationStyle": "temporary",
         "titleBarStyle": "hidden"
     },
@@ -885,28 +884,6 @@
         "icon": "home",
         "layout": "grid",
         "theme": "60ac3cbdefc9f2e1",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
         "order": 1,
         "className": "",
         "visible": "true",
@@ -1977,6 +1954,57 @@
         "tls": false
     },
     {
+        "id": "a795cdef49ef1786",
+        "type": "ui_group",
+        "name": "Control del sistema",
+        "tab": "a92569ec83aa763f",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "a92569ec83aa763f",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "2e3c931fa3bbfc50",
+        "type": "ui_group",
+        "name": "Control del sistema",
+        "tab": "03dbcbd020cf4411",
+        "order": 1,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "03dbcbd020cf4411",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "group1",
+        "type": "ui_group",
+        "name": "Control del sistema",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab1",
+        "type": "ui_tab",
+        "name": "Tablero",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "12fecd1437a645f5",
         "type": "inject",
         "z": "ef484dfe62883e41",
@@ -1997,8 +2025,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 160,
+        "x": 120,
+        "y": 200,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2026,8 +2054,8 @@
         "topic": "next",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 120,
+        "x": 130,
+        "y": 160,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2053,8 +2081,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1000,
-        "y": 140,
+        "x": 500,
+        "y": 180,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2073,7 +2101,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 500,
         "y": 240,
         "wires": [
             [
@@ -2107,8 +2135,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 80,
+        "x": 130,
+        "y": 120,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2127,8 +2155,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 280,
+        "x": 690,
+        "y": 260,
         "wires": [
             []
         ]
@@ -2154,8 +2182,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 240,
+        "x": 120,
+        "y": 280,
         "wires": [
             [
                 "52f696716f4afee6",
@@ -2175,8 +2203,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
-        "y": 180,
+        "x": 1110,
+        "y": 220,
         "wires": [
             [
                 "774d1a1e5fe9a62c"
@@ -2195,8 +2223,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1940,
-        "y": 180,
+        "x": 1340,
+        "y": 220,
         "wires": [
             [
                 "format-for-table"
@@ -2220,7 +2248,7 @@
         "keepMsgProperties": false,
         "delayOnStart": false,
         "startDelayTime": "",
-        "x": 1170,
+        "x": 690,
         "y": 220,
         "wires": [
             [
@@ -2262,8 +2290,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 1400,
-        "y": 200,
+        "x": 880,
+        "y": 220,
         "wires": [
             [
                 "ebd8a6041841f03c"
@@ -2295,8 +2323,8 @@
         "keepMsgProperties": false,
         "delayOnStart": false,
         "startDelayTime": "",
-        "x": 1170,
-        "y": 340,
+        "x": 690,
+        "y": 300,
         "wires": [
             [
                 "daf14ab530413bfa",
@@ -2324,8 +2352,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
-        "y": 440,
+        "x": 520,
+        "y": 380,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2384,7 +2412,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 8,
-        "x": 1400,
+        "x": 880,
         "y": 320,
         "wires": [
             [],
@@ -2411,8 +2439,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 340,
+        "x": 520,
+        "y": 320,
         "wires": [
             [
                 "c296231e87efaef1"
@@ -2436,8 +2464,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 400,
+        "x": 690,
+        "y": 340,
         "wires": [
             []
         ]
@@ -2463,8 +2491,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 400,
+        "x": 120,
+        "y": 440,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2492,8 +2520,8 @@
         "topic": "next",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 360,
+        "x": 130,
+        "y": 400,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2521,8 +2549,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 320,
+        "x": 130,
+        "y": 360,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2550,8 +2578,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 450,
-        "y": 200,
+        "x": 110,
+        "y": 240,
         "wires": [
             [
                 "cfa9ea269d1301f9"
@@ -2570,8 +2598,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 200,
+        "x": 300,
+        "y": 240,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2599,8 +2627,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 450,
-        "y": 280,
+        "x": 110,
+        "y": 320,
         "wires": [
             [
                 "190e11b017a746c7"
@@ -2619,8 +2647,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 280,
+        "x": 300,
+        "y": 320,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2639,8 +2667,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2170,
-        "y": 180,
+        "x": 1550,
+        "y": 220,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2656,8 +2684,8 @@
         "links": [
             "c64e80cac0381523"
         ],
-        "x": 2355,
-        "y": 180,
+        "x": 1675,
+        "y": 220,
         "wires": []
     },
     {
@@ -2672,8 +2700,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1700,
-        "y": 140,
+        "x": 1100,
+        "y": 180,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2692,8 +2720,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1680,
-        "y": 220,
+        "x": 1080,
+        "y": 260,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2712,8 +2740,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 260,
+        "x": 1090,
+        "y": 300,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2732,8 +2760,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 300,
+        "x": 1090,
+        "y": 340,
         "wires": [
             [
                 "e72027eda7951399"
@@ -3459,8 +3487,8 @@
         "topic": "read_ADC4_AI0",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":40,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 500,
+        "x": 130,
+        "y": 340,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3488,8 +3516,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 460,
+        "x": 140,
+        "y": 300,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3517,8 +3545,8 @@
         "topic": "next",
         "payload": "",
         "payloadType": "date",
-        "x": 350,
-        "y": 420,
+        "x": 150,
+        "y": 260,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3544,7 +3572,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
+        "x": 360,
         "y": 380,
         "wires": [
             [
@@ -3564,8 +3592,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 520,
+        "x": 360,
+        "y": 420,
         "wires": [
             [
                 "569f0bcbe0758d28"
@@ -3598,8 +3626,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 350,
-        "y": 380,
+        "x": 150,
+        "y": 220,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3618,8 +3646,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 560,
+        "x": 530,
+        "y": 440,
         "wires": [
             []
         ]
@@ -3645,8 +3673,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 330,
-        "y": 820,
+        "x": 130,
+        "y": 660,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3674,8 +3702,8 @@
         "topic": "read_ADC4_AI1",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":41,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 540,
+        "x": 130,
+        "y": 380,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3703,8 +3731,8 @@
         "topic": "read_ADC4_AI2",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":42,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 580,
+        "x": 130,
+        "y": 420,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3728,8 +3756,8 @@
         "keepMsgProperties": true,
         "delayOnStart": false,
         "startDelayTime": "",
-        "x": 810,
-        "y": 480,
+        "x": 510,
+        "y": 400,
         "wires": [
             [
                 "c87fddc1c5401137",
@@ -3790,8 +3818,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 8,
-        "x": 1040,
-        "y": 460,
+        "x": 700,
+        "y": 400,
         "wires": [
             [
                 "b64b7ffe3203889c"
@@ -3832,8 +3860,8 @@
         "topic": "read_ADC4_AI3",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":43,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 620,
+        "x": 130,
+        "y": 460,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3852,8 +3880,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1250,
-        "y": 460,
+        "x": 890,
+        "y": 420,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3872,8 +3900,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1250,
-        "y": 500,
+        "x": 890,
+        "y": 460,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3893,8 +3921,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1260,
-        "y": 380,
+        "x": 900,
+        "y": 340,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3914,8 +3942,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1260,
-        "y": 420,
+        "x": 900,
+        "y": 380,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3943,8 +3971,8 @@
         "topic": "read_ADC4_AI7",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":47,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 780,
+        "x": 130,
+        "y": 620,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3972,8 +4000,8 @@
         "topic": "read_ADC4_AI5",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":45,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 700,
+        "x": 130,
+        "y": 540,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -4001,8 +4029,8 @@
         "topic": "read_ADC4_AI4",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":44,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 660,
+        "x": 130,
+        "y": 500,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -4030,8 +4058,8 @@
         "topic": "read_ADC4_AI6",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":46,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 740,
+        "x": 130,
+        "y": 580,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -4047,8 +4075,8 @@
         "links": [
             "c64e80cac0381523"
         ],
-        "x": 1485,
-        "y": 440,
+        "x": 1045,
+        "y": 400,
         "wires": []
     },
     {
@@ -4755,7 +4783,7 @@
         "group": "3f690bb5a526a246",
         "name": "Tabla de Sensores",
         "label": "Valores de Sensores",
-        "order": 3,
+        "order": 6,
         "width": "12",
         "height": "5",
         "maxrows": "",
@@ -4798,7 +4826,6 @@
         ],
         "mobileBreakpoint": "lg",
         "mobileBreakpointType": "defaults",
-        "action": "replace",
         "x": 1030,
         "y": 420,
         "wires": [
@@ -4809,10 +4836,11 @@
         "id": "shutdown-button",
         "type": "ui-button",
         "z": "e2b9859944ef07b2",
+        "d": true,
         "group": "3f690bb5a526a246",
         "name": "",
         "label": "Apagar Sistema",
-        "order": 2,
+        "order": 5,
         "width": 6,
         "height": 1,
         "emulateClick": false,
@@ -4829,7 +4857,7 @@
         "buttonColor": "",
         "textColor": "",
         "iconColor": "",
-        "x": 520,
+        "x": 390,
         "y": 520,
         "wires": [
             [
@@ -4841,21 +4869,28 @@
         "id": "reboot-button",
         "type": "ui-button",
         "z": "e2b9859944ef07b2",
+        "d": true,
         "group": "3f690bb5a526a246",
+        "name": "",
         "label": "Reiniciar Sistema",
-        "order": 1,
+        "order": 2,
         "width": 6,
         "height": 1,
+        "emulateClick": false,
         "tooltip": "Reinicia el sistema",
         "color": "white",
         "bgcolor": "#e67e22",
         "className": "",
         "icon": "fa-refresh",
+        "iconPosition": "left",
         "payload": "reboot",
         "payloadType": "str",
         "topic": "power",
         "topicType": "str",
-        "x": 520,
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "x": 390,
         "y": 560,
         "wires": [
             [
@@ -4867,6 +4902,7 @@
         "id": "power-confirm",
         "type": "ui-notification",
         "z": "e2b9859944ef07b2",
+        "d": true,
         "ui": "bc1023506614f084",
         "position": "center",
         "colorDefault": false,
@@ -4893,6 +4929,7 @@
         "id": "power-exec",
         "type": "function",
         "z": "e2b9859944ef07b2",
+        "d": true,
         "name": "Ejecutar comando",
         "func": "const exec = require('child_process').exec;\n\n// Verificar si el usuario confirmó la acción\nif (msg.payload === \"cancel\") {\n    return null; // No hacer nada si el usuario cancela\n}\n\n// Recuperar la acción original (shutdown o reboot) del topic\nconst accion = msg.topic;\n\n// Determinar el comando según el sistema operativo\nlet comando;\nconst plataforma = process.platform;\n\n// Definir el comando según el sistema operativo\nif (plataforma === \"win32\") { // Windows\n    if (accion === \"shutdown\") {\n        comando = 'shutdown /s /t 15'; // Apagar con 15 segundos de retraso\n    } else if (accion === \"reboot\") {\n        comando = 'shutdown /r /t 15'; // Reiniciar con 15 segundos de retraso\n    }\n} else if (plataforma === \"linux\" || plataforma === \"darwin\") { // Linux o macOS\n    if (accion === \"shutdown\") {\n        comando = 'sudo shutdown -h now'; // Apagar inmediatamente\n    } else if (accion === \"reboot\") {\n        comando = 'sudo reboot'; // Reiniciar inmediatamente\n    }\n}\n\n// Ejecutar el comando si se ha definido\nif (comando) {\n    // Mostrar mensaje de aviso\n    node.warn(`Ejecutando comando: ${comando}`);\n    \n    // Ejecutar el comando\n    exec(comando, (error, stdout, stderr) => {\n        if (error) {\n            node.error(`Error al ejecutar el comando: ${error}`);\n            return;\n        }\n    });\n    \n    // Informar al usuario\n    const accionTexto = accion === \"shutdown\" ? \"apagando\" : \"reiniciando\";\n    msg.payload = `Sistema ${accionTexto} en 15 segundos...`;\n    return msg;\n} else {\n    msg.payload = \"Comando no reconocido o sistema operativo no compatible\";\n    return msg;\n}\n",
         "outputs": 1,
@@ -4901,36 +4938,342 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 930,
         "y": 540,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8c7d0a4a545f9d8",
+        "type": "function",
+        "z": "e2b9859944ef07b2",
+        "d": true,
+        "name": "Establecer comando",
+        "func": "// Lee la variable global os_platform (si no existe, asume 'linux')\nlet os = global.get(\"os_platform\") || \"linux\";\n\nif(msg.payload === \"shutdown\") {\n    if(os === \"win32\") {\n        msg.payload = \"shutdown /s /t 15\";\n    } else {\n        msg.payload = \"sudo shutdown -h now\";\n    }\n} else if(msg.payload === \"reboot\") {\n    if(os === \"win32\") {\n        msg.payload = \"shutdown /r /t 15\";\n    } else {\n        msg.payload = \"sudo reboot\";\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 760,
+        "y": 880,
+        "wires": [
             [
-                "power-status"
+                "0c2e31a86f2d6a57"
             ]
         ]
     },
     {
-        "id": "power-status",
+        "id": "0c2e31a86f2d6a57",
+        "type": "exec",
+        "z": "e2b9859944ef07b2",
+        "d": true,
+        "command": "",
+        "addpay": true,
+        "append": "",
+        "useSpawn": false,
+        "timer": "",
+        "oldrc": false,
+        "name": "Ejecutar comando",
+        "x": 970,
+        "y": 880,
+        "wires": [
+            [
+                "19529594499b6cb1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "77e41776ebafe468",
+        "type": "ui-button",
+        "z": "e2b9859944ef07b2",
+        "d": true,
+        "group": "3f690bb5a526a246",
+        "name": "",
+        "label": "Apagar Sistema",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "emulateClick": false,
+        "tooltip": "Apaga completamente el sistema",
+        "color": "white",
+        "bgcolor": "#c21717",
+        "className": "",
+        "icon": "fa-power-off",
+        "iconPosition": "left",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "power",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "x": 340,
+        "y": 860,
+        "wires": [
+            [
+                "2c54dba10fddd5a1"
+            ]
+        ]
+    },
+    {
+        "id": "29a120b8d5432f57",
+        "type": "ui-button",
+        "z": "e2b9859944ef07b2",
+        "d": true,
+        "group": "3f690bb5a526a246",
+        "name": "",
+        "label": "Reiniciar Sistema",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "emulateClick": false,
+        "tooltip": "Reinicia el sistema",
+        "color": "white",
+        "bgcolor": "#e67e22",
+        "className": "",
+        "icon": "fa-refresh",
+        "iconPosition": "left",
+        "payload": "reboot",
+        "payloadType": "str",
+        "topic": "power",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "x": 340,
+        "y": 900,
+        "wires": [
+            [
+                "2c54dba10fddd5a1"
+            ]
+        ]
+    },
+    {
+        "id": "2c54dba10fddd5a1",
+        "type": "ui-template",
+        "z": "e2b9859944ef07b2",
+        "d": true,
+        "group": "3f690bb5a526a246",
+        "page": "",
+        "ui": "",
+        "name": "Confirmacion",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div>\n        <h3>¿Está seguro?</h3>\n        \n        <div v-if=\"msg.payload === 'shutdown'\">\n            <p>Está a punto de <strong>APAGAR</strong> el sistema.</p>\n            <p>Esta acción cerrará todos los procesos en ejecución.</p>\n        </div>\n        \n        <div v-if=\"msg.payload === 'reboot'\">\n            <p>Está a punto de <strong>REINICIAR</strong> el sistema.</p>\n            <p>Esta acción cerrará todos los procesos en ejecución y volverá a iniciar el sistema.</p>\n        </div>\n        \n        <div class=\"button-container\">\n            <v-btn @click=\"confirm()\" class=\"confirm-btn\">Confirmar</v-btn>\n            <v-btn @click=\"cancel()\" class=\"cancel-btn\">Cancelar</v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                action: ''\n            }\n        },\n        methods: {\n            confirm: function() {\n                // Enviar el mensaje original para continuar con la acción\n                this.send(msg);\n            },\n            cancel: function() {\n                // No hacer nada o enviar un mensaje de cancelación\n                this.send({payload: 'cancelled', topic: msg.topic});\n            }\n        },\n        mounted() {\n            // Guardar la acción solicitada cuando se carga el componente\n            this.action = msg.payload;\n        }\n    }\n</script>\n\n<style>\n    .button-container {\n        margin-top: 20px;\n        display: flex;\n        gap: 10px;\n    }\n    \n    .confirm-btn {\n        background-color: #c21717 !important;\n        color: white !important;\n    }\n    \n    .cancel-btn {\n        background-color: #888 !important;\n        color: white !important;\n    }\n    \n    h3 {\n        color: #333;\n        margin-bottom: 15px;\n    }\n    \n    p {\n        margin: 5px 0;\n    }\n    \n    strong {\n        color: #c21717;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 880,
+        "wires": [
+            [
+                "d8c7d0a4a545f9d8"
+            ]
+        ]
+    },
+    {
+        "id": "19529594499b6cb1",
         "type": "ui-notification",
         "z": "e2b9859944ef07b2",
+        "d": true,
         "ui": "bc1023506614f084",
-        "position": "top",
-        "colorDefault": false,
+        "position": "top right",
+        "colorDefault": true,
         "color": "#000000",
-        "displayTime": 15,
-        "showCountdown": false,
+        "displayTime": "3",
+        "showCountdown": true,
         "outputs": 1,
-        "allowDismiss": false,
-        "dismissText": "",
+        "allowDismiss": true,
+        "dismissText": "Close",
         "allowConfirm": false,
-        "confirmText": "",
+        "confirmText": "Confirm",
         "raw": false,
         "className": "",
         "name": "Estado",
-        "x": 1040,
-        "y": 540,
+        "x": 1140,
+        "y": 880,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "753b043fda615eac",
+        "type": "ui-button",
+        "z": "e2b9859944ef07b2",
+        "group": "3f690bb5a526a246",
+        "name": "",
+        "label": "Apagar Sistema",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "emulateClick": false,
+        "tooltip": "Apaga completamente el sistema",
+        "color": "white",
+        "bgcolor": "#c21717",
+        "className": "",
+        "icon": "fa-power-off",
+        "iconPosition": "left",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "power",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 320,
+        "y": 740,
+        "wires": [
+            [
+                "b7da0d063a29e43d"
+            ]
+        ]
+    },
+    {
+        "id": "4b25ad3d32583227",
+        "type": "ui-button",
+        "z": "e2b9859944ef07b2",
+        "group": "3f690bb5a526a246",
+        "name": "",
+        "label": "Reiniciar Sistema",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "emulateClick": false,
+        "tooltip": "Reinicia el sistema",
+        "color": "white",
+        "bgcolor": "#e67e22",
+        "className": "",
+        "icon": "fa-refresh",
+        "iconPosition": "left",
+        "payload": "reboot",
+        "payloadType": "str",
+        "topic": "power",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "x": 320,
+        "y": 780,
+        "wires": [
+            [
+                "b7da0d063a29e43d"
+            ]
+        ]
+    },
+    {
+        "id": "b7da0d063a29e43d",
+        "type": "ui-notification",
+        "z": "e2b9859944ef07b2",
+        "ui": "bc1023506614f084",
+        "position": "center",
+        "colorDefault": false,
+        "color": "#ffffff",
+        "displayTime": "0",
+        "showCountdown": false,
+        "outputs": 2,
+        "allowDismiss": true,
+        "dismissText": "Cancelar",
+        "allowConfirm": true,
+        "confirmText": "Confirmar",
+        "raw": true,
+        "className": "",
+        "name": "Confirmar Acción",
+        "x": 540,
+        "y": 760,
+        "wires": [
+            [
+                "e03cb4fabe1d707d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e03cb4fabe1d707d",
+        "type": "function",
+        "z": "e2b9859944ef07b2",
+        "name": "Establecer comando",
+        "func": "// Lee la variable global os_platform (si no existe, asume 'linux')\nlet os = global.get(\"os_platform\") || \"linux\";\n\nif(msg.payload === \"shutdown\") {\n    if(os === \"win32\") {\n        msg.payload = \"shutdown /s /t 15\";\n    } else {\n        msg.payload = \"sudo shutdown -h now\";\n    }\n} else if(msg.payload === \"reboot\") {\n    if(os === \"win32\") {\n        msg.payload = \"shutdown /r /t 15\";\n    } else {\n        msg.payload = \"sudo reboot\";\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 760,
+        "wires": [
+            [
+                "9908b4b4c5bf5392"
+            ]
+        ]
+    },
+    {
+        "id": "9908b4b4c5bf5392",
+        "type": "exec",
+        "z": "e2b9859944ef07b2",
+        "command": "",
+        "addpay": true,
+        "append": "",
+        "useSpawn": false,
+        "timer": "",
+        "oldrc": false,
+        "name": "Ejecutar comando",
+        "x": 950,
+        "y": 760,
+        "wires": [
+            [
+                "5372c5128017e926"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5372c5128017e926",
+        "type": "ui-notification",
+        "z": "e2b9859944ef07b2",
+        "ui": "bc1023506614f084",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Estado",
+        "x": 1120,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c361d3e63601c79e",
+        "type": "function",
+        "z": "e2b9859944ef07b2",
+        "name": "Generar mensaje de confirmación",
+        "func": "// Determinar el mensaje según la acción\nlet title = '';\nlet text = '';\n\nif (msg.payload === 'shutdown') {\n    title = '¿Está seguro que desea apagar el sistema?';\n    text = 'Esta acción cerrará todos los procesos en ejecución.';\n} else if (msg.payload === 'reboot') {\n    title = '¿Está seguro que desea reiniciar el sistema?';\n    text = 'Esta acción cerrará todos los procesos en ejecución y reiniciará el sistema.';\n}\n\n// Configurar la notificación\nmsg.ui_notification = {\n    title: title,\n    text: text,\n    background: msg.payload === 'shutdown' ? '#c21717' : '#e67e22',\n    color: 'white',\n    closeButton: true\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 700,
+        "wires": [
+            [
+                "b7da0d063a29e43d"
+            ]
         ]
     }
 ]
