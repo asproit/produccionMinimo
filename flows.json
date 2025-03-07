@@ -2025,8 +2025,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 160,
+        "x": 120,
+        "y": 200,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2054,8 +2054,8 @@
         "topic": "next",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 120,
+        "x": 130,
+        "y": 160,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2081,8 +2081,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1000,
-        "y": 140,
+        "x": 500,
+        "y": 180,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2101,7 +2101,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 500,
         "y": 240,
         "wires": [
             [
@@ -2135,8 +2135,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 80,
+        "x": 130,
+        "y": 120,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2155,8 +2155,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 280,
+        "x": 690,
+        "y": 260,
         "wires": [
             []
         ]
@@ -2182,8 +2182,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 240,
+        "x": 120,
+        "y": 280,
         "wires": [
             [
                 "52f696716f4afee6",
@@ -2203,8 +2203,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
-        "y": 180,
+        "x": 1110,
+        "y": 220,
         "wires": [
             [
                 "774d1a1e5fe9a62c"
@@ -2223,8 +2223,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1940,
-        "y": 180,
+        "x": 1340,
+        "y": 220,
         "wires": [
             [
                 "format-for-table"
@@ -2248,7 +2248,7 @@
         "keepMsgProperties": false,
         "delayOnStart": false,
         "startDelayTime": "",
-        "x": 1170,
+        "x": 690,
         "y": 220,
         "wires": [
             [
@@ -2290,8 +2290,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 1400,
-        "y": 200,
+        "x": 880,
+        "y": 220,
         "wires": [
             [
                 "ebd8a6041841f03c"
@@ -2323,8 +2323,8 @@
         "keepMsgProperties": false,
         "delayOnStart": false,
         "startDelayTime": "",
-        "x": 1170,
-        "y": 340,
+        "x": 690,
+        "y": 300,
         "wires": [
             [
                 "daf14ab530413bfa",
@@ -2352,8 +2352,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
-        "y": 440,
+        "x": 520,
+        "y": 380,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2412,7 +2412,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 8,
-        "x": 1400,
+        "x": 880,
         "y": 320,
         "wires": [
             [],
@@ -2439,8 +2439,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 340,
+        "x": 520,
+        "y": 320,
         "wires": [
             [
                 "c296231e87efaef1"
@@ -2464,8 +2464,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 400,
+        "x": 690,
+        "y": 340,
         "wires": [
             []
         ]
@@ -2491,8 +2491,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 460,
-        "y": 400,
+        "x": 120,
+        "y": 440,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2520,8 +2520,8 @@
         "topic": "next",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 360,
+        "x": 130,
+        "y": 400,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2549,8 +2549,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 320,
+        "x": 130,
+        "y": 360,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2578,8 +2578,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 450,
-        "y": 200,
+        "x": 110,
+        "y": 240,
         "wires": [
             [
                 "cfa9ea269d1301f9"
@@ -2598,8 +2598,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 200,
+        "x": 300,
+        "y": 240,
         "wires": [
             [
                 "52f696716f4afee6"
@@ -2627,8 +2627,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 450,
-        "y": 280,
+        "x": 110,
+        "y": 320,
         "wires": [
             [
                 "190e11b017a746c7"
@@ -2647,8 +2647,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 280,
+        "x": 300,
+        "y": 320,
         "wires": [
             [
                 "b3cb6bc705334ae6"
@@ -2667,8 +2667,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2170,
-        "y": 180,
+        "x": 1550,
+        "y": 220,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2685,8 +2685,8 @@
             "d28bdcf38e2d85e2",
             "c64e80cac0381523"
         ],
-        "x": 2355,
-        "y": 180,
+        "x": 1675,
+        "y": 220,
         "wires": []
     },
     {
@@ -2701,8 +2701,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1700,
-        "y": 140,
+        "x": 1100,
+        "y": 180,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2721,8 +2721,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1680,
-        "y": 220,
+        "x": 1080,
+        "y": 260,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2741,8 +2741,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 260,
+        "x": 1090,
+        "y": 300,
         "wires": [
             [
                 "e72027eda7951399"
@@ -2761,8 +2761,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 300,
+        "x": 1090,
+        "y": 340,
         "wires": [
             [
                 "e72027eda7951399"
@@ -3489,8 +3489,8 @@
         "topic": "read_ADC4_AI0",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":40,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 500,
+        "x": 130,
+        "y": 340,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3518,8 +3518,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 460,
+        "x": 140,
+        "y": 300,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3547,8 +3547,8 @@
         "topic": "next",
         "payload": "",
         "payloadType": "date",
-        "x": 350,
-        "y": 420,
+        "x": 150,
+        "y": 260,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3574,7 +3574,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
+        "x": 360,
         "y": 380,
         "wires": [
             [
@@ -3594,8 +3594,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 520,
+        "x": 360,
+        "y": 420,
         "wires": [
             [
                 "569f0bcbe0758d28"
@@ -3628,8 +3628,8 @@
         "topic": "update",
         "payload": "",
         "payloadType": "date",
-        "x": 350,
-        "y": 380,
+        "x": 150,
+        "y": 220,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3648,8 +3648,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 560,
+        "x": 530,
+        "y": 440,
         "wires": [
             []
         ]
@@ -3675,8 +3675,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 330,
-        "y": 820,
+        "x": 130,
+        "y": 660,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3704,8 +3704,8 @@
         "topic": "read_ADC4_AI1",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":41,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 540,
+        "x": 130,
+        "y": 380,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3733,8 +3733,8 @@
         "topic": "read_ADC4_AI2",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":42,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 580,
+        "x": 130,
+        "y": 420,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3758,8 +3758,8 @@
         "keepMsgProperties": true,
         "delayOnStart": false,
         "startDelayTime": "",
-        "x": 810,
-        "y": 480,
+        "x": 510,
+        "y": 400,
         "wires": [
             [
                 "c87fddc1c5401137",
@@ -3820,8 +3820,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 8,
-        "x": 1040,
-        "y": 460,
+        "x": 700,
+        "y": 400,
         "wires": [
             [
                 "b64b7ffe3203889c"
@@ -3862,8 +3862,8 @@
         "topic": "read_ADC4_AI3",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":43,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 620,
+        "x": 130,
+        "y": 460,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -3882,8 +3882,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1250,
-        "y": 460,
+        "x": 890,
+        "y": 420,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3902,8 +3902,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1250,
-        "y": 500,
+        "x": 890,
+        "y": 460,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3923,8 +3923,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1260,
-        "y": 380,
+        "x": 900,
+        "y": 340,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3944,8 +3944,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1260,
-        "y": 420,
+        "x": 900,
+        "y": 380,
         "wires": [
             [
                 "c0231489540b4e4d"
@@ -3973,8 +3973,8 @@
         "topic": "read_ADC4_AI7",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":47,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 780,
+        "x": 130,
+        "y": 620,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -4002,8 +4002,8 @@
         "topic": "read_ADC4_AI5",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":45,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 700,
+        "x": 130,
+        "y": 540,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -4031,8 +4031,8 @@
         "topic": "read_ADC4_AI4",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":44,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 660,
+        "x": 130,
+        "y": 500,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -4060,8 +4060,8 @@
         "topic": "read_ADC4_AI6",
         "payload": "{\"value\":0,\"fc\":4,\"unitid\":1,\"address\":46,\"quantity\":1}",
         "payloadType": "json",
-        "x": 330,
-        "y": 740,
+        "x": 130,
+        "y": 580,
         "wires": [
             [
                 "34559fc6ca703fdf"
@@ -4078,8 +4078,8 @@
             "d28bdcf38e2d85e2",
             "c64e80cac0381523"
         ],
-        "x": 1485,
-        "y": 440,
+        "x": 1045,
+        "y": 400,
         "wires": []
     },
     {
