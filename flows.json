@@ -4795,37 +4795,34 @@
                 "title": "Sensor",
                 "key": "nombre",
                 "type": "html",
-                "width": "30%",
-                "align": "start",
-                "sorter": false
+                "width": "35%",
+                "align": "start"
             },
             {
                 "title": "Valor",
                 "key": "valor",
                 "type": "html",
                 "width": "20%",
-                "align": "center",
-                "sorter": false
+                "align": "center"
             },
             {
                 "title": "Unidades",
                 "key": "unidades",
                 "type": "html",
                 "width": "15%",
-                "align": "start",
-                "sorter": false
+                "align": "start"
             },
             {
                 "title": "Última actualización",
                 "key": "tiempo",
                 "type": "html",
-                "width": "35%",
-                "align": "end",
-                "sorter": false
+                "width": "30%",
+                "align": "end"
             }
         ],
         "mobileBreakpoint": "lg",
         "mobileBreakpointType": "defaults",
+        "action": "append",
         "x": 1030,
         "y": 420,
         "wires": [
@@ -5125,13 +5122,6 @@
         "buttonColor": "",
         "textColor": "",
         "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
         "x": 320,
         "y": 740,
         "wires": [
